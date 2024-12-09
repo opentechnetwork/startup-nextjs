@@ -14,6 +14,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Free Next.js Template for Startup and SaaS",
   description: "This is Home for Startup Nextjs Template",
+  keywords: "Next.js, SaaS, startup, template",
   // other metadata
 };
 

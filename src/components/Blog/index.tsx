@@ -2,6 +2,17 @@ import SectionTitle from "../Common/SectionTitle";
 import SingleBlog from "./SingleBlog";
 import blogData from "./blogData";
 
+// Duplicate check (for debugging purposes)
+const seenIds = new Set();
+
+blogData.forEach((blog) => {
+  if (seenIds.has(blog.id)) {
+    console.error(`Duplicate key found: ${blog.id}`);
+  } else {
+    seenIds.add(blog.id);
+  }
+});
+
 const Blog = () => {
   return (
     <section
