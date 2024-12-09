@@ -12,14 +12,14 @@ const Footer = () => {
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
                   <Image
-                    src="/images/logo/logo-2.svg"
+                    src="/images/logo/otin-dark-footer.svg"
                     alt="logo"
                     className="w-full dark:hidden"
                     width={140}
                     height={30}
                   />
                   <Image
-                    src="/images/logo/logo.svg"
+                    src="/images/logo/otin-footer.svg"
                     alt="logo"
                     className="hidden w-full dark:block"
                     width={140}
@@ -27,12 +27,11 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lobortis.
-                </p>
+                Connect with Open Tech Innovations for custom web design, digital marketing, or e-commerce solutions. Our team is ready to turn your vision into reality. Contact us today to start building your online future.                </p>
                 <div className="flex items-center">
+                  {/*<!--Facebook-->*/}
                   <a
-                    href="/"
+                    href="https://www.facebook.com/opentechai"
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -51,6 +50,7 @@ const Footer = () => {
                       />
                     </svg>
                   </a>
+                  {/*<!--Twitter-->
                   <a
                     href="/"
                     aria-label="social-link"
@@ -72,7 +72,8 @@ const Footer = () => {
                         fill="currentColor"
                       />
                     </svg>
-                  </a>
+                  </a>*/}
+                  {/*<!--YouTube-->*
                   <a
                     href="/"
                     aria-label="social-link"
@@ -88,9 +89,10 @@ const Footer = () => {
                     >
                       <path d="M17.5058 2.07119C17.3068 1.2488 16.7099 0.609173 15.9423 0.395963C14.5778 7.26191e-08 9.0627 0 9.0627 0C9.0627 0 3.54766 7.26191e-08 2.18311 0.395963C1.41555 0.609173 0.818561 1.2488 0.619565 2.07119C0.25 3.56366 0.25 6.60953 0.25 6.60953C0.25 6.60953 0.25 9.68585 0.619565 11.1479C0.818561 11.9703 1.41555 12.6099 2.18311 12.8231C3.54766 13.2191 9.0627 13.2191 9.0627 13.2191C9.0627 13.2191 14.5778 13.2191 15.9423 12.8231C16.7099 12.6099 17.3068 11.9703 17.5058 11.1479C17.8754 9.68585 17.8754 6.60953 17.8754 6.60953C17.8754 6.60953 17.8754 3.56366 17.5058 2.07119ZM7.30016 9.44218V3.77687L11.8771 6.60953L7.30016 9.44218Z" />
                     </svg>
-                  </a>
+                  </a>/}
+                  {/*<!--Linkedin-->*/}
                   <a
-                    href="/"
+                    href="https://www.linkedin.com/in/david-burns-462638339/"
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -116,13 +118,23 @@ const Footer = () => {
                 </h2>
                 <ul>
                   <li>
-                    <Link
-                      href="/blog"
+                  <Link
+                      href="/signin"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Blog
+                      Sign In
                     </Link>
                   </li>
+                  <li>
+                  <Link
+                      href="/signup"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      Sign Up
+                    </Link>
+                  </li>
+                  
+                 
                   <li>
                     <Link
                       href="/"
@@ -139,6 +151,14 @@ const Footer = () => {
                       About
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="/blog"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      Blog
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -146,7 +166,7 @@ const Footer = () => {
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Terms
+                  Policies
                 </h2>
                 <ul>
                   <li>
@@ -154,7 +174,15 @@ const Footer = () => {
                       href="/"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      TOS
+                      Terms &amp; Conditions
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      Security Policy
                     </Link>
                   </li>
                   <li>
@@ -170,7 +198,24 @@ const Footer = () => {
                       href="/"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Refund Policy
+                      Cookie Policy
+                    </Link>
+                  </li>
+                  
+                  <li>
+                    <Link
+                      href="/"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      Accessibility
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      Disclaimer
                     </Link>
                   </li>
                 </ul>
@@ -215,23 +260,33 @@ const Footer = () => {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
-              Template by{" "}
+              &copy; 2024 {" "}
               <a
-                href="http://uideck.com"
+                href="https://www.opentechinnovations.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary"
               >
-                UIdeck
+                Open Tech Innovations
               </a>{" "}
-              and{" "}
+              |{" "}
               <a
-                href="https://nextjstemplates.com"
+                href="/privacy-policy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary"
               >
-                Next.js Templates
+                Privacy Policy
+              </a>
+              {" "}
+              |{" "}
+              <a
+                href="/policies"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary"
+              >
+                All Rights Reserved.
               </a>
             </p>
           </div>

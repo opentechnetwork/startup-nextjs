@@ -28,7 +28,13 @@
         "name": "next"
       }
     ],
-    "target": "ES2017"
+    "target": "ES2017",
+    "types": [
+      "node",
+      "react",
+      "json-schema",
+      "estree"
+    ] // Add the missing types here
   },
   "include": [
     "next-env.d.ts",

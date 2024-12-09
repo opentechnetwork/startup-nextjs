@@ -14,7 +14,7 @@ const ContactPage = () => {
     <>
       <Breadcrumb
         pageName="Contact Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description="Get in touch with Open Tech Innovations to discuss your project needs or learn more about our services. Whether you’re looking for custom web design, digital marketing strategies, or e-commerce solutions, our team is ready to help you bring your vision to life. Reach out today, and let’s start building your future online."
       />
 
       <Contact />

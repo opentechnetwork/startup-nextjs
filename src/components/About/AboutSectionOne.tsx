@@ -24,8 +24,8 @@ const AboutSectionOne = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Crafted for Startup, SaaS and Business Sites."
-                paragraph="The main ‘thrust’ is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
+                title="Innovative Solutions for Startups and Established Businesses."
+                paragraph="Our mission is to empower small to medium-sized businesses with advanced technology solutions, focusing on enhancing online presence and security through interactive discussions and expert strategies."
                 mb="44px"
               />
 
@@ -35,15 +35,15 @@ const AboutSectionOne = () => {
               >
                 <div className="mx-[-12px] flex flex-wrap">
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Premium quality" />
-                    <List text="Tailwind CSS" />
-                    <List text="Use for lifetime" />
+                    <List text="Responsive Web Design" />
+                    <List text="SEO Strategies" />
+                    <List text="E-commerce Solutions" />
                   </div>
 
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Next.js" />
-                    <List text="Rich documentation" />
-                    <List text="Developer friendly" />
+                    <List text="Digital Marketing" />
+                    <List text="Web Development" />
+                    <List text="Analytics and Reporting" />
                   </div>
                 </div>
               </div>
@@ -67,7 +67,29 @@ const AboutSectionOne = () => {
             </div>
           </div>
         </div>
+        <div className=" mt-6 gap-5 columns-1">
+        <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">Values & Mission</h3>
+        <p className="text-base !leading-relaxed text-body-color">Our mission is to empower businesses by providing comprehensive digital solutions that drive growth and efficiency. We value transparency, innovation, and measurable success, ensuring our clients understand the impact of our efforts. At Open Tech Innovations, we are committed to delivering exceptional service and fostering long-term partnerships with our clients
+        </p>
+        </div>
+        <div className="py-5 border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
+          <div className="gap-8 md:columns-2 sm:columns-1 xs:columns-1 column-sm">
+            <div className="mt-3 py-5">
+              <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">Introduction</h3>
+              <p className="text-base !leading-relaxed text-body-color">
+                Open Tech Innovations is a pioneer in the digital landscape, offering a comprehensive suite of services that blend human expertise with advanced AI technology. Since our inception in 2012, we've been committed to transforming businesses by enhancing their online presence and operational efficiency through innovative solutions.
+              </p>
+            </div>
+            <div className="mt-3 py-5">
+              <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">Unique Selling Points</h3>
+              <p className="text-base !leading-relaxed text-body-color">
+                What sets us apart is our holistic approach to digital solutions. By integrating web design, front-end development, SEO, automations, integrations, and AI, we provide a seamless experience that enhances every aspect of your digital presence. Our team of experts collaborates closely with clients to tailor strategies that meet their unique needs and challenges, ensuring optimal results.            </p>
+            </div>
+          </div>
+        </div>
       </div>
+
+
     </section>
   );
 };
