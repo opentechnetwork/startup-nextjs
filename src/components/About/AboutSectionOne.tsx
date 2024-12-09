@@ -7,6 +7,8 @@ const checkIcon = (
   </svg>
 );
 
+// app/components/About/AboutSectionOne.tsx
+
 const AboutSectionOne = () => {
   const List = ({ text }) => (
     <p className="mb-5 flex items-center text-lg font-medium text-body-color">
@@ -25,7 +27,7 @@ const AboutSectionOne = () => {
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
                 title="Innovative Solutions for Startups and Established Businesses."
-                paragraph="Our mission is to empower small to medium-sized businesses with advanced technology solutions, focusing on enhancing online presence and security through interactive discussions and expert strategies."
+                paragraph="Our mission is to empower small to medium-sized businesses&apos; with advanced technology solutions, focusing on enhancing online presence and security through interactive discussions and expert strategies."
                 mb="44px"
               />
 
@@ -77,7 +79,7 @@ const AboutSectionOne = () => {
             <div className="mt-3 py-5">
               <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">Introduction</h3>
               <p className="text-base !leading-relaxed text-body-color">
-                Open Tech Innovations is a pioneer in the digital landscape, offering a comprehensive suite of services that blend human expertise with advanced AI technology. Since our inception in 2012, we've been committed to transforming businesses by enhancing their online presence and operational efficiency through innovative solutions.
+                Open Tech Innovations is a pioneer in the digital landscape, offering a comprehensive suite of services that blend human expertise with advanced AI technology. Since our inception in 2012, we&apos;ve been committed to transforming businesses by enhancing their online presence and operational efficiency through innovative solutions.
               </p>
             </div>
             <div className="mt-3 py-5">

@@ -2,14 +2,13 @@
 import SingleBlog from "@/components/Blog/SingleBlog";
 import blogData from "@/components/Blog/blogData";
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import Link from "next/link";  // Import Link for dynamic routing
 
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Blog Page | Free Next.js Template for Startup and SaaS",
   description: "This is Blog Page for Startup Nextjs Template",
-  // other meta
+  // other metadata
 };
 
 const Blog = () => {
@@ -28,9 +27,8 @@ const Blog = () => {
                 key={blog.id}
                 className="w-full px-4 md:w-2/3 lg:w-1/2 xl:w-1/3"
               >
-                <Link href={`/blog/${blog.slug}`}> {/* Add link to dynamic blog page */}
-                  <SingleBlog blog={blog} />
-                </Link>
+                {/* Remove Link wrapping SingleBlog, displaying static content */}
+                <SingleBlog blog={blog} />
               </div>
             ))}
           </div>

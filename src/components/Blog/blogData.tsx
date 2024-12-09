@@ -14,7 +14,7 @@ const blogData: Blog[] = [
     },
     tags: ["creative"],
     publishDate: "2025",
-    slug: "/blog-details", // Add a unique slug
+    
   },
   {
     id: Number("2"),
@@ -29,7 +29,7 @@ const blogData: Blog[] = [
     },
     tags: ["computer"],
     publishDate: "2025",
-    slug: "9-simple-ways-to-improve-your-design-skills", // Add a unique slug
+    
   },
   {
     id: Number("3"),
@@ -44,7 +44,7 @@ const blogData: Blog[] = [
     },
     tags: ["design"],
     publishDate: "2025",
-    slug: "/blog-details", // Add a unique slug
+    
   },
 ];
 export default blogData;

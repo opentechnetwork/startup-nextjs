@@ -12,5 +12,4 @@ export type Blog = {
   author: Author;
   tags: string[];
   publishDate: string;
-  slug: string; // Add slug for dynamic routing
 };
