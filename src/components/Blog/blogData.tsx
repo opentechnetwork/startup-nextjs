@@ -5,7 +5,7 @@ const blogData: Blog[] = [
     id: Number("1"),
     title: "Best UI components for modern websites",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor. consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
     image: "/images/blog/blog-01.jpg",
     author: {
       name: "Samuyl Joshi",
@@ -14,6 +14,7 @@ const blogData: Blog[] = [
     },
     tags: ["creative"],
     publishDate: "2025",
+    slug: "/blog-details", // Add a unique slug
   },
   {
     id: Number("2"),
@@ -28,6 +29,7 @@ const blogData: Blog[] = [
     },
     tags: ["computer"],
     publishDate: "2025",
+    slug: "9-simple-ways-to-improve-your-design-skills", // Add a unique slug
   },
   {
     id: Number("3"),
@@ -42,6 +44,7 @@ const blogData: Blog[] = [
     },
     tags: ["design"],
     publishDate: "2025",
+    slug: "/blog-details", // Add a unique slug
   },
 ];
 export default blogData;
