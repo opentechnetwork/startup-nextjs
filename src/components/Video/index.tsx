@@ -13,10 +13,11 @@ const Video = () => {
     <section className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="We are ready to help"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="Unlock Your Business Potential"
+          paragraph="At Open Tech Innovations, we're here to transform your digital presence and drive success. Our team of experts is ready to guide you every step of the way, offering tailored solutions that fit your unique needs. Dive into the possibilities and see how we can elevate your business to new heights."
           center
           mb="80px"
+
         />
 
         <div className="-mx-4 flex flex-wrap">

@@ -59,43 +59,50 @@ const Pricing = () => {
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
-            packageName="Lite"
-            price={isMonthly ? "40" : "120"}
+            packageName="Starter"
+            price={isMonthly ? "99" : "2,160"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Steady growth with advanced SEO and responsive design."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="inactive" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="Advanced SEO strategies" status="active" />
+            <OfferList text="Responsive website design (up to 10 pages)" status="active" />
+            <OfferList text="Basic PPC management" status="active" />
+            <OfferList text="Contact forms setup" status="active" />
+            <OfferList text="Monthly analytics reports" status="active" />
+            <OfferList text="Price: $199/month" status="active" />
+            <OfferList text="Setup Fee: $150" status="active" />
+
           </PricingBox>
           <PricingBox
-            packageName="Basic"
-            price={isMonthly ? "399" : "789"}
+            packageName="Professional"
+            price={isMonthly ? "299" : "4,320"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Elevate your strategy with comprehensive SEO and social media."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="Comprehensive SEO" status="active" />
+            <OfferList text="Social media management" status="active" />
+            <OfferList text="Custom web design (up to 15 pages)" status="active" />
+            <OfferList text="SEM management and setup" status="active" />
+            <OfferList text="Monthly customer reports" status="active" />
+            <OfferList text="Price: $399/month" status="active" />
+            <OfferList text="Setup Fee: $200" status="active" />
+
+            {/* <OfferList text="Free Lifetime Updates" status="inactive" /> the status either displays a checkmark of X related to what is offered for the package.*/}
           </PricingBox>
           <PricingBox
-            packageName="Plus"
-            price={isMonthly ? "589" : "999"}
+            packageName="Premium"
+            price={isMonthly ? "499" : "6,480"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Maximize impact with full-service SEO, PPC, and development"
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="active" />
+            <OfferList text="Full-service SEO and PPC" status="active" />
+            <OfferList text="Social media management" status="active" />
+            <OfferList text="Custom web development (up to 20 pages)" status="active" />
+            <OfferList text="Monthly backups and maintenance" status="active" />
+            <OfferList text="Graphic design and stock images" status="active" />
+            <OfferList text="Price: $599/month" status="active" />
+            <OfferList text="Setup Fee: $300" status="active" />
+
           </PricingBox>
         </div>
       </div>

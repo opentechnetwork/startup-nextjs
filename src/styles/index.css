@@ -31,3 +31,40 @@
     @apply opacity-100;
   }
 }
+
+#navbarCollapse li {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+/* Style the navbar links */
+
+#navbarCollapse li a {
+  text-decoration: none; /* Remove default underline */
+ 
+  font-weight: 500; /* Adjust font weight */
+  position: relative; /* To position the pseudo-element correctly */
+  padding-bottom: 4px; /* Add some space below the text for the bottom border */
+  transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+/* Add the hover effect */
+#navbarCollapse li a:hover {
+  color: #1d4ed8; /* Set hover text color (Tailwind's blue-700) */
+}
+
+/* Bottom border on hover */
+#navbarCollapse li a::after {
+  content: ''; /* Necessary to create a pseudo-element */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0; /* Initially no width */
+  height: 2px; /* Height of the bottom border */
+  background-color: #3490dc; /* Set border color (Tailwind's blue-500) */
+  transition: width 0.3s ease; /* Smooth transition for the width */
+}
+
+/* When hovering over the link, expand the bottom border */
+#navbarCollapse li a:hover::after {
+  width: 100%; /* Expand the bottom border to full width */
+}

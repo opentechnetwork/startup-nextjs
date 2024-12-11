@@ -9,7 +9,7 @@ const Features = () => {
         <div className="container">
           <SectionTitle
             title="Main Features"
-            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+            paragraph="At Open Tech Innovations, we empower your business with cutting-edge technology and tailored strategies. From AI-driven insights to scalable solutions, discover how we can drive growth and achieve your goals."
             center
           />
 
