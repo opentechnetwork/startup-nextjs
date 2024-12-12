@@ -3,8 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
-
-import ModalVideo from "react-modal";
+import ReactModal from "react-modal";
 
 const Video = () => {
   const [isOpen, setOpen] = useState(false);
@@ -17,7 +16,6 @@ const Video = () => {
           paragraph="At Open Tech Innovations, we're here to transform your digital presence and drive success. Our team of experts is ready to guide you every step of the way, offering tailored solutions that fit your unique needs. Dive into the possibilities and see how we can elevate your business to new heights."
           center
           mb="80px"
-
         />
 
         <div className="-mx-4 flex flex-wrap">
@@ -50,14 +48,32 @@ const Video = () => {
         </div>
       </div>
 
-      <ModalVideo
-        channel="youtube"
-        autoplay={true}
-        start={true}
+      {/* React Modal Implementation */}
+      <ReactModal
         isOpen={isOpen}
-        videoId="L61p2uyiMSo"
-        onClose={() => setOpen(false)}
-      />
+        onRequestClose={() => setOpen(false)}
+        className="Modal"
+        overlayClassName="Overlay"
+        ariaHideApp={false} // Ensure accessibility
+      >
+        <div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/L61p2uyiMSo?autoplay=1"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+          <button
+            onClick={() => setOpen(false)}
+            className="mt-4 bg-primary text-white px-4 py-2 rounded"
+          >
+            Close
+          </button>
+        </div>
+      </ReactModal>
 
       <div className="absolute bottom-0 left-0 right-0 z-[-1] h-full w-full bg-[url(/images/video/shape.svg)] bg-cover bg-center bg-no-repeat"></div>
     </section>

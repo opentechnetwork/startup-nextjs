@@ -1,6 +1,5 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
-import Blog from "@/components/Blog";
 import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
@@ -12,10 +11,12 @@ import Video from "@/components/Video";
 import MainServices from "@/components/Services/MainServices";
 import AdditionalServices from "@/components/Services/AdditionalServices";
 import { Metadata } from "next";
+import React from 'react';
+
 
 export const metadata: Metadata = {
   title: "Free Next.js Template for Startup and SaaS",
-  description: "This is Home for Startup Nextjs Template",
+  description: "This is Home for Startup Next js Template",
   keywords: "Next.js, SaaS, startup, template",
   // other metadata
 };
@@ -34,7 +35,6 @@ export default function Home() {
       <MainServices />
       <AdditionalServices />
       <Pricing />
-       {/*<Blog />*/}
       <Contact />
     </>
   );
