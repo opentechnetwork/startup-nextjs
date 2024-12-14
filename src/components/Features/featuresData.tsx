@@ -2,7 +2,7 @@ import { Feature } from "@/types/feature";
 
 const featuresData: Feature[] = [
   {
-    id: 1,
+    id: 20,
     icon: (
       <svg width="40" height="41" viewBox="0 0 40 41" className="fill-current">
         <path
@@ -17,7 +17,7 @@ const featuresData: Feature[] = [
       "Leverage cutting-edge AI technology to gain valuable insights and drive data-driven decisions for your business growth.",
   },
   {
-    id: 1,
+    id: 21,
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
         <path
@@ -32,7 +32,7 @@ const featuresData: Feature[] = [
       "Tailor-made AI solutions designed to meet the unique needs of your business, enhancing efficiency and innovation.",
   },
   {
-    id: 1,
+    id: 22,
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
         <path
@@ -47,7 +47,7 @@ const featuresData: Feature[] = [
       "High-quality, responsive design using the latest technologies, including Next.js, React, Tailwind CSS, Bootstrap CSS, and more for an exceptional user experience.",
   },
   {
-    id: 1,
+    id: 23,
     icon: (
       <svg width="40" height="42" viewBox="0 0 40 42" className="fill-current">
         <path
@@ -62,7 +62,7 @@ const featuresData: Feature[] = [
       "Build scalable and flexible digital solutions that grow with your business, ensuring long-term success and adaptability.",
   },
   {
-    id: 1,
+    id: 24,
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
         <path
@@ -77,7 +77,7 @@ const featuresData: Feature[] = [
       "Utilize proprietary technologies to create customizable and robust applications tailored to your business needs.",
   },
   {
-    id: 1,
+    id: 25,
     icon: (
       <svg width="40" height="45" viewBox="0 0 40 45" className="fill-current">
         <path

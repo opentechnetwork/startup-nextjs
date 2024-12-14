@@ -1,6 +1,7 @@
 import SectionTitle from "../Common/SectionTitle";
 import SingleBlog from "./SingleBlog";
 import blogData from "./blogData";
+import { useEffect, useState } from "react";
 
 // Duplicate check (for debugging purposes)
 const seenIds = new Set();
@@ -14,6 +15,11 @@ blogData.forEach((blog) => {
 });
 
 const Blog = () => {
+
+  // Optionally log blog IDs to check for duplicates
+  useEffect(() => {
+    console.log(blogData.map(blog => blog.id)); // Log the blog ids to check for duplicates
+  }, [blogData]);
   return (
     <section
       id="blog"
