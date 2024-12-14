@@ -25,7 +25,7 @@ const Video = () => {
               data-wow-delay=".15s"
             >
               <div className="relative aspect-[77/40] items-center justify-center">
-                <Image src="/images/video/video.jpg" alt="video image" fill />
+                <Image src="/images/video/video.jpg" alt="video image" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                 <div className="absolute right-0 top-0 flex h-full w-full items-center justify-center">
                   <button
                     aria-label="video play button"
@@ -61,7 +61,7 @@ const Video = () => {
             width="560"
             height="315"
             src="https://www.youtube.com/embed/L61p2uyiMSo?autoplay=1"
-            title="YouTube video player"
+            title="YouTube video player - Introduction to React"
             style={{ border: "none" }} // Replaces the deprecated frameBorder attribute
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen

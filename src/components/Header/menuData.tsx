@@ -33,7 +33,7 @@ const menuData: Menu[] = [
     newTab: false,
   },
   
-  {
+  /*{
     id: 6,
     title: "Pages",
     newTab: false,
@@ -87,7 +87,7 @@ const menuData: Menu[] = [
         newTab: false,
       },
     ],
-  }
+  }*/
 ];
 
 
