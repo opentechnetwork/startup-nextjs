@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Enhance Your Digital Strategy with Our Additional Services",
-  description: "Discover Open Tech Innovations' additional services: UX/UI design, CMS solutions, website maintenance, analytics, and advanced integrations. Elevate your digital strategy with our comprehensive enhancements.",
+  description: "Discover Open Tech Innovations&#39; additional services: UX/UI design, CMS solutions, website maintenance, analytics, and advanced integrations. Elevate your digital strategy with our comprehensive enhancements.",
   keywords: "UX/UI design, CMS solutions, website maintenance, analytics, advanced integrations, content management, digital strategy, Open Tech Innovations, website support",
 };
 
@@ -46,7 +46,7 @@ const AdditionalServicesSection = () => {
           <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
             <h3 className="text-2xl font-semibold text-gray-800 mb-4">Analytics and Reporting</h3>
             <p className="text-gray-600">
-            Gain valuable insights into your website's performance with our Analytics and Reporting services. We offer detailed reports and data analysis to help you understand user behavior, track key performance indicators, and make informed decisions to enhance your digital strategy.            </p>
+            Gain valuable insights into your website&#39;s performance with our Analytics and Reporting services. We offer detailed reports and data analysis to help you understand user behavior, track key performance indicators, and make informed decisions to enhance your digital strategy.            </p>
           </div>
         </div>
       </div>

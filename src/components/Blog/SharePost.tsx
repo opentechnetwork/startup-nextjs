@@ -2,7 +2,7 @@ const SharePost = () => {
   return (
     <>
       <a
-        href="#0"
+        href="https://www.opentechinnovations.com"
         aria-label="social-share"
         className="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-sm bg-gray-light text-body-color duration-300 hover:bg-primary hover:text-white dark:bg-gray-dark dark:hover:bg-primary sm:ml-3"
       >
@@ -16,7 +16,7 @@ const SharePost = () => {
         </svg>
       </a>
       <a
-        href="#0"
+        href="https://www.opentechinnovations.com"
         aria-label="social-share"
         className="mb-3 ml-3 inline-flex h-9 w-9 items-center justify-center rounded-sm bg-gray-light text-body-color duration-300 hover:bg-primary hover:text-white dark:bg-gray-dark dark:hover:bg-primary"
       >
@@ -36,7 +36,7 @@ const SharePost = () => {
         </svg>
       </a>
       <a
-        href="#0"
+        href="https://www.opentechinnovations.com"
         aria-label="social-share"
         className="mb-3 ml-3 inline-flex h-9 w-9 items-center justify-center rounded-sm bg-gray-light text-body-color duration-300 hover:bg-primary hover:text-white dark:bg-gray-dark dark:hover:bg-primary"
       >

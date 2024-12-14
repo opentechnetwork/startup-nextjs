@@ -62,7 +62,7 @@ const Video = () => {
             height="315"
             src="https://www.youtube.com/embed/L61p2uyiMSo?autoplay=1"
             title="YouTube video player"
-            frameBorder="0"
+            style={{ border: "none" }} // Replaces the deprecated frameBorder attribute
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
@@ -74,6 +74,7 @@ const Video = () => {
           </button>
         </div>
       </ReactModal>
+
 
       <div className="absolute bottom-0 left-0 right-0 z-[-1] h-full w-full bg-[url(/images/video/shape.svg)] bg-cover bg-center bg-no-repeat"></div>
     </section>

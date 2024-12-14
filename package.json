@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "callsites": "^4.2.0",
     "eslint": "^9.16.0",
     "eslint-config-next": "^15.0.4",
     "next": "^15.1.0",
@@ -18,10 +19,13 @@
     "react-modal": "^3.16.1"
   },
   "devDependencies": {
+    "@types/cssstyle": "^2.2.4",
     "@types/estree": "^1.0.6",
     "@types/json-schema": "^7.0.15",
     "@types/node": "^22.10.1",
+    "@types/prop-types": "^15.7.14",
     "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.2",
     "@types/react-modal": "^3.16.3",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.49",
