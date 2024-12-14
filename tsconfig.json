@@ -37,10 +37,11 @@
       "react",
       "json-schema",
       "estree",
-      "prop-types",      // Added the missing types
+      "prop-types", // Added the missing types
       "@types/cssstyle", // Update to a valid CSS type,
-      "react-dom"        // Ensure react-dom types are included
-    ]
+      "react-dom" // Ensure react-dom types are included
+    ],
+    "strictNullChecks": true
   },
   "include": [
     "next-env.d.ts",

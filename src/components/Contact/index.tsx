@@ -16,7 +16,7 @@ const Contact = () => {
               <p className="mb-12 text-base font-medium text-body-color">
                 Our support team will get back to you ASAP via email.
               </p>
-              <form>
+              <form action="@formspree" method="POST">
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
@@ -32,6 +32,7 @@ const Contact = () => {
                         placeholder="Enter your name"
                         autoComplete="name" // This enables autofill for full name
                         className="border-stroke w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+                        required // Ensure that the field is filled out
                       />
                     </div>
                   </div>
@@ -49,6 +50,7 @@ const Contact = () => {
                         placeholder="Enter your email"
                         autoComplete="email" // This enables autofill for email
                         className="border-stroke w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+                        required // Ensure that the field is filled out
                       />
                     </div>
                   </div>
@@ -67,6 +69,7 @@ const Contact = () => {
                         placeholder="Enter your Message"
                         autoComplete="off" // Prevent autofill for message field
                         className="border-stroke w-full resize-none rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+                        required // Ensure that the field is filled out
                       ></textarea>
                     </div>
                   </div>

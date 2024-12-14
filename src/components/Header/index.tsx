@@ -141,15 +141,18 @@ const Header = () => {
                                 openIndex === index ? "block" : "hidden"
                               }`}
                             >
-                              {menuItem.submenu.map((submenuItem, index) => (
-                                <Link
-                                  href={submenuItem.path}
-                                  key={index}
-                                  className="block rounded py-2.5 text-sm text-dark hover:text-primary dark:text-white/70 dark:hover:text-white lg:px-3"
-                                >
-                                  {submenuItem.title}
-                                </Link>
-                              ))}
+                              {menuItem.submenu?.map(
+                                (submenuItem, subIndex) => (
+                                  <Link
+                                    href={submenuItem.path || "#"} // Add a default fallback path
+                                    key={subIndex} // Use subIndex or another unique key
+                                    className="block rounded py-2.5 text-sm text-dark hover:text-primary dark:text-white/70 dark:hover:text-white lg:px-3"
+                                  >
+                                    {submenuItem.title || "Unnamed Item"}{" "}
+                                    {/* Provide fallback for title */}
+                                  </Link>
+                                ),
+                              )}
                             </div>
                           </>
                         )}
