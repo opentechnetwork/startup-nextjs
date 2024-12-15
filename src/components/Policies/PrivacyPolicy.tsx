@@ -1,54 +1,106 @@
-import { Metadata } from "next";
-
-
-export const metadata: Metadata = {
-  title: "Enhance Your Digital Strategy with Our Additional Services",
-  description: "Discover Open Tech Innovations&#39; additional services: UX/UI design, CMS solutions, website maintenance, analytics, and advanced integrations. Elevate your digital strategy with our comprehensive enhancements.",
-  keywords: "UX/UI design, CMS solutions, website maintenance, analytics, advanced integrations, content management, digital strategy, Open Tech Innovations, website support",
-};
+import React from "react";
 
 const PrivacyPolicy = () => {
+  const currentDate = new Date().toLocaleDateString();
   return (
-    <section className="bg-white py-16">
-      <div className="container mx-auto">
-        {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Additional Services</h2>
-          <p className="text-lg text-gray-600">
-            We offer a range of additional services to complement your online presence. Explore our specialized offerings below.
-          </p>
-        </div>
+    <section className="py-16 md:py-20 lg:py-28">
+      <div className="container">
+        <h1 className="mb-6 text-3xl font-bold">Privacy Policy</h1>
+        <p>Effective Date: {currentDate}</p>
+        <p>
+          Open Tech Innovations ("we," "us," or "our") is committed to
+          protecting your privacy. This Privacy Policy explains how we collect,
+          use, disclose, and safeguard your information when you visit our
+          website [insert website URL], including any other media form, media
+          channel, mobile website, or mobile application related or connected
+          thereto (collectively, the "Site"). Please read this privacy policy
+          carefully.
+        </p>
+        <h2 className="mt-8 text-2xl font-semibold">Information We Collect:</h2>
+        <ul className="list-disc pl-5">
+          <li>
+            <strong>Personal Data:</strong> Information you provide directly,
+            such as your name, email address, phone number, and company
+            information.
+          </li>
+          <li>
+            <strong>Derivative Data:</strong> Information our servers
+            automatically collect when you access the Site, such as your IP
+            address, browser type, operating system, access times, and the pages
+            you have viewed directly before and after accessing the Site.
+          </li>
+          <li>
+            <strong>Financial Data:</strong> If applicable, payment information,
+            including credit card numbers and other financial data.
+          </li>
+          <li>
+            <strong>Mobile Device Data:</strong> Device information, such as
+            your mobile device ID, model, and manufacturer, and information
+            about the location of your device.
+          </li>
+        </ul>
 
-        {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* CMS */}
-          <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Content Management Systems (CMS)</h3>
-            <p className="text-gray-600">
-              Simplify your content management with our CMS Solutions. We utilize user-friendly platforms like WordPress to make content updates effortless, allowing you to focus on what matters most: your business. Our CMS services ensure your website remains dynamic and up-to-date.            </p>
-          </div>
+        <h2 className="mt-8 text-2xl font-semibold">
+          Use of Your Information:
+        </h2>
+        <p>
+          We may use the information we collect from you in the following ways:
+        </p>
+        <ul className="list-disc pl-5">
+          <li>To operate and maintain our Site</li>
+          <li>To improve your experience on our Site</li>
+          <li>To send administrative information to you</li>
+          <li>To respond to your inquiries and provide customer service</li>
+          <li>For marketing and promotional purposes</li>
+          <li>To enforce our terms, conditions, and policies</li>
+        </ul>
 
-          {/* UX/UI Design */}
-          <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">UX/UI Design Services</h3>
-            <p className="text-gray-600">
-              Our UX/UI Design Services are dedicated to enhancing user satisfaction by optimizing website navigation and usability. We create intuitive and engaging interfaces that improve user experience, leading to increased customer retention and satisfaction.            </p>
-          </div>
+        <h2 className="mt-8 text-2xl font-semibold">
+          Disclosure of Your Information:
+        </h2>
+        <p>
+          We may share information we have collected about you in certain
+          situations:
+        </p>
+        <ul className="list-disc pl-5">
+          <li>
+            <strong>By Law or to Protect Rights:</strong> If we believe
+            disclosure is necessary to comply with the law or legal process, or
+            to protect the rights, property, or safety of Open Tech Innovations.
+          </li>
+          <li>
+            <strong>Third-Party Service Providers:</strong> We may share your
+            information with third-party service providers to perform functions
+            on our behalf, such as payment processing, data analysis, email
+            delivery, hosting services, customer service, and marketing
+            assistance.
+          </li>
+        </ul>
 
-          {/* Website Maintenance */}
-          <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Website Maintenance and Support</h3>
-            <p className="text-gray-600">
-              Keep your website running smoothly with our comprehensive Website Maintenance and Support services. We provide regular updates, security checks, and performance optimizations to ensure your site remains secure and efficient, minimizing downtime and maximizing user engagement.            </p>
-          </div>
+        <h2 className="mt-8 text-2xl font-semibold">Data Security:</h2>
+        <p>
+          We use administrative, technical, and physical security measures to
+          help protect your personal information. While we have taken reasonable
+          steps to secure the personal information you provide to us, please be
+          aware that despite our efforts, no security measures are perfect or
+          impenetrable.
+        </p>
 
-          {/* Analytics and Reporting */}
-          <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Analytics and Reporting</h3>
-            <p className="text-gray-600">
-              Gain valuable insights into your website&#39;s performance with our Analytics and Reporting services. We offer detailed reports and data analysis to help you understand user behavior, track key performance indicators, and make informed decisions to enhance your digital strategy.            </p>
-          </div>
-        </div>
+        <h2 className="mt-8 text-2xl font-semibold">Your Rights:</h2>
+        <ul className="list-disc pl-5">
+          <li>Access, correct, or delete your personal information</li>
+          <li>Withdraw consent at any time</li>
+          <li>Lodge a complaint with a supervisory authority</li>
+        </ul>
+
+        <h2 className="mt-8 text-2xl font-semibold">Contact Us:</h2>
+        <p>
+          If you have questions or comments about this Privacy Policy, please
+          contact us at:
+        </p>
+        <ul className="list-disc pl-5">
+          <li>Email: support@openwebcommunications.com</li>
+        </ul>
       </div>
     </section>
   );

@@ -32,10 +32,60 @@ const menuData: Menu[] = [
     path: "/contact",
     newTab: false,
   },
-  
+  {
+    id: 6,
+    title: "Policy",
+    newTab: false,
+    submenu: [
+      {
+        id: 41,
+        title: "Security",
+        path: "/polices/security",
+        newTab: false,
+      },
+      {
+        id: 42,
+        title: "Privacy",
+        path: "/policies/privacy",
+        newTab: false,
+      },
+      {
+        id: 43,
+        title: "Cookie",
+        path: "/policies/cookie",
+        newTab: false,
+      },
+      {
+        id: 44,
+        title: "Accessibility",
+        path: "/policies/accessibility",
+        newTab: false,
+      },
+      {
+        id: 45,
+        title: "Disclaimer",
+        path: "/policies/disclaimer",
+        newTab: false,
+      },
+      {
+        id: 46,
+        title: "Terms and Conditions",
+        path: "/policies/terms",
+        newTab: false,
+      },
+      {
+        id: 47,
+        title: "Terms of Use",
+        path: "/policies/terms_of_use",
+        newTab: false,
+      },
+    ],
+  }
+
+
   /*{
     id: 6,
-    title: "Policies",
+    title: "Security",
     newTab: false,
     submenu: [
       {

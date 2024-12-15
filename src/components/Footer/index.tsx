@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <>
       <footer className="relative z-10 bg-white pt-16 dark:bg-gray-dark md:pt-20 lg:pt-24">
@@ -27,7 +28,11 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                Connect with Open Tech Innovations for custom web design, digital marketing, or e-commerce solutions. Our team is ready to turn your vision into reality. Contact us today to start building your online future.                </p>
+                  Connect with Open Tech Innovations for custom web design,
+                  digital marketing, or e-commerce solutions. Our team is ready
+                  to turn your vision into reality. Contact us today to start
+                  building your online future.{" "}
+                </p>
                 <div className="flex items-center">
                   {/*<!--Facebook-->*/}
                   <a
@@ -118,7 +123,7 @@ const Footer = () => {
                 </h2>
                 <ul>
                   <li>
-                  <Link
+                    <Link
                       href="/signin"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
@@ -126,18 +131,17 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                  <Link
+                    <Link
                       href="/signup"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Sign Up
                     </Link>
                   </li>
-                  
-                 
+
                   <li>
                     <Link
-                      href="/"
+                      href="/pricing"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Pricing
@@ -166,45 +170,37 @@ const Footer = () => {
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Policies
+                  Policy
                 </h2>
                 <ul>
                   <li>
                     <Link
-                      href="/"
+                      href="/policies/security"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Terms &amp; Conditions
+                      Security
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/policies/privacy"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Security Policy
+                      Privacy
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/policies/cookie"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Privacy Policy
+                      Cookie
                     </Link>
                   </li>
+
                   <li>
                     <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Cookie Policy
-                    </Link>
-                  </li>
-                  
-                  <li>
-                    <Link
-                      href="/"
+                      href="/policies/accessibility"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Accessibility
@@ -212,10 +208,18 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/policies/disclaimer"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Disclaimer
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/policies/terms"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      Terms &amp; Conditions
                     </Link>
                   </li>
                 </ul>
@@ -238,18 +242,10 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/policies/terms_of_use"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Terms of Use
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/about"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      About
                     </Link>
                   </li>
                 </ul>
@@ -260,7 +256,7 @@ const Footer = () => {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
-              &copy; 2024 {" "}
+              &copy; {currentYear}{" "}
               <a
                 href="https://www.opentechinnovations.com"
                 target="_blank"
@@ -271,14 +267,13 @@ const Footer = () => {
               </a>{" "}
               |{" "}
               <a
-                href="/privacy-policy"
+                href="/policies/privacy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary"
               >
                 Privacy Policy
-              </a>
-              {" "}
+              </a>{" "}
               |{" "}
               <a
                 href="/policies"
