@@ -6,6 +6,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import { Inter } from "next/font/google";
 import "../styles/index.css";
 import "../styles/interfont.css";
+import CookieConsentBanner from "@/components/CookieConsentBanner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+          <CookieConsentBanner />
           <ScrollToTop />
         </Providers>
       </body>
