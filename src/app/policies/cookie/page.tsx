@@ -1,9 +1,12 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import CookiePolicy from "@/components/Policies/CookiePolicy"; // Replace with the correct component import
 
-export const metadata = {
-  title: "Policy Title | Open Tech Innovations",
-  description: "This is a detailed description for the specific policy page.",
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "",
+  description: "",
+  keywords: "",
 };
 
 const CookiePolicyCookiePage = () => {

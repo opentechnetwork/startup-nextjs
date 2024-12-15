@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const TermsAndConditions = () => {
   const currentDate = new Date().toLocaleDateString(); // Dynamically fetches the current date
 
@@ -10,7 +11,7 @@ const TermsAndConditions = () => {
 
       <p className="mb-4">
         Welcome to Open Tech Innovations. These terms and conditions outline the rules and regulations for the use of
-        Open Tech Innovations' Website, located at [website URL].
+        Open Tech Innovations&#39; Website, located at [website URL].
       </p>
 
       <h2 className="text-2xl font-semibold mb-2">1. Acceptance of Terms</h2>

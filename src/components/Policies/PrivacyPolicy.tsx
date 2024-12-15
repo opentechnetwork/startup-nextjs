@@ -8,12 +8,12 @@ const PrivacyPolicy = () => {
         <h1 className="mb-6 text-3xl font-bold">Privacy Policy</h1>
         <p>Effective Date: {currentDate}</p>
         <p>
-          Open Tech Innovations ("we," "us," or "our") is committed to
+          Open Tech Innovations (&quot;we,&ldquo; &quot;us,&ldquo; or &quot;our&ldquo;) is committed to
           protecting your privacy. This Privacy Policy explains how we collect,
           use, disclose, and safeguard your information when you visit our
           website [insert website URL], including any other media form, media
           channel, mobile website, or mobile application related or connected
-          thereto (collectively, the "Site"). Please read this privacy policy
+          thereto (collectively, the &quot;Site&ldquo;). Please read this privacy policy
           carefully.
         </p>
         <h2 className="mt-8 text-2xl font-semibold">Information We Collect:</h2>
