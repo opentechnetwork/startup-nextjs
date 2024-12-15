@@ -4,9 +4,9 @@ import SecurityPolicy from "@/components/Policies/SecurityPolicy"; // Replace wi
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "",
-  description: "",
-  keywords: "",
+  title: "Security Policy | Open Tech Innovation",
+  description: "Learn about the security measures Open Tech Innovations takes to protect your data. Read our Security Policy.",
+  keywords: "security policy, data protection, cybersecurity, Open Tech Innovations, data security",
 };
 
 const SecurityPolicySecurityPage = () => {
@@ -14,8 +14,8 @@ const SecurityPolicySecurityPage = () => {
     <div className="container mx-auto px-4 py-8">
       {/* Breadcrumb */}
       <Breadcrumb
-        pageName="Policy Title"
-        description="Learn more about this policy and how it applies to you."
+        pageName="Security Policy"
+        description="Learn about the security measures Open Tech Innovations takes to protect your data. Read our Security Policy."
       />
 
       {/* Main Content Component */}

@@ -4,9 +4,9 @@ import CookiePolicy from "@/components/Policies/CookiePolicy"; // Replace with t
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "",
-  description: "",
-  keywords: "",
+  title: "Cookie Policy | Open Tech Innovations",
+  description: "Discover how Open Tech Innovations uses cookies to enhance your experience. Read our Cookie Policy for more information.",
+  keywords: "cookie policy, cookies, website cookies, Open Tech Innovations, user experience",
 };
 
 const CookiePolicyCookiePage = () => {
@@ -14,8 +14,8 @@ const CookiePolicyCookiePage = () => {
     <div className="container mx-auto px-4 py-8">
       {/* Breadcrumb */}
       <Breadcrumb
-        pageName="Policy Title"
-        description="Learn more about this policy and how it applies to you."
+        pageName="Cookie Policy"
+        description="Discover how Open Tech Innovations uses cookies to enhance your experience. Read our Cookie Policy for more information."
       />
 
       {/* Main Content Component */}

@@ -4,9 +4,9 @@ import AccessibilityStatement  from "@/components/Policies/AccessibilityStatemen
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "",
-  description: "",
-  keywords: "",
+  title: "Accessibility Statement | Open Tech Innovations",
+  description: "Open Tech Innovations is committed to digital accessibility. Read our Accessibility Statement for more details.",
+  keywords: "accessibility statement, digital accessibility, WCAG compliance, Open Tech Innovations",
 };
 
 const AccessibilityPage = () => {
@@ -14,8 +14,8 @@ const AccessibilityPage = () => {
     <div className="container mx-auto px-4 py-8">
       {/* Breadcrumb */}
       <Breadcrumb
-        pageName="Policy Title"
-        description="Learn more about this policy and how it applies to you."
+        pageName="Accessibility Statement"
+        description="Open Tech Innovations is committed to digital accessibility. Read our Accessibility Statement for more details."
       />
 
       {/* Main Content Component */}

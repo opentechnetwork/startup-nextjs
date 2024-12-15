@@ -4,9 +4,9 @@ import TermsOfUse from "@/components/Policies/TermsOfUse"; // Replace with the c
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "",
-  description: "",
-  keywords: "",
+  title: "Terms of Use | Open Tech Innovations",
+  description: "Review the Terms of Use for accessing Open Tech Innovations' website. Know your responsibilities and rights.",
+  keywords: "terms of use, user responsibilities, website access, Open Tech Innovations, user agreement",
 };
 
 const TermsOfUseTerms_Of_UsePage = () => {
@@ -15,7 +15,7 @@ const TermsOfUseTerms_Of_UsePage = () => {
       {/* Breadcrumb */}
       <Breadcrumb
         pageName="Policy Title"
-        description="Learn more about this policy and how it applies to you."
+        description="Review the Terms of Use for accessing Open Tech Innovations' website. Know your responsibilities and rights."
       />
 
       {/* Main Content Component */}

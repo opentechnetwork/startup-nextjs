@@ -4,9 +4,9 @@ import Disclaimer from "@/components/Policies/Disclaimer"; // Replace with the c
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "",
-  description: "",
-  keywords: "",
+  title: "Disclaimer | Open Tech Innovations",
+  description: "Read the Disclaimer for Open Tech Innovations' website. Understand the limitations of liability and information use.",
+  keywords: "disclaimer, liability, information use, Open Tech Innovations, legal disclaimer",
 };
 
 const DisclaimerDisclaimerPage = () => {
@@ -14,8 +14,8 @@ const DisclaimerDisclaimerPage = () => {
     <div className="container mx-auto px-4 py-8">
       {/* Breadcrumb */}
       <Breadcrumb
-        pageName="Policy Title"
-        description="Learn more about this policy and how it applies to you."
+        pageName="Disclaimer"
+        description="Read the Disclaimer for Open Tech Innovations' website. Understand the limitations of liability and information use."
       />
 
       {/* Main Content Component */}
