@@ -16,7 +16,7 @@ const Contact = () => {
               <p className="mb-12 text-base font-medium text-body-color">
                 Our support team will get back to you ASAP via email.
               </p>
-              <form action="@formspree" method="POST">
+              <form action="https://formspree.io/f/xeoqbzrk" method="POST">
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
@@ -27,8 +27,9 @@ const Contact = () => {
                         Full Name
                       </label>
                       <input
+                        name="name"
                         id="name"
-                        type="text"
+                        type="name"
                         placeholder="Enter your name"
                         autoComplete="name" // This enables autofill for full name
                         className="border-stroke w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
@@ -45,6 +46,7 @@ const Contact = () => {
                         Email
                       </label>
                       <input
+                        name="email"
                         id="email"
                         type="email"
                         placeholder="Enter your email"

@@ -6,7 +6,9 @@ import ScrollToTop from "@/components/ScrollToTop";
 import { Inter } from "next/font/google";
 import "../styles/index.css";
 import "../styles/interfont.css";
+
 import CookieConsentBanner from "@/components/CookieConsentBanner";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +20,9 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <head>
-        <title>My Application</title>
+        <title>Free Next.js Template for Startup and SaaS</title>
+        <meta />
+        <meta />
       </head>
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
         <Providers>

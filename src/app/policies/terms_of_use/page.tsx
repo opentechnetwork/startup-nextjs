@@ -14,7 +14,7 @@ const TermsOfUseTerms_Of_UsePage = () => {
     <div className="container mx-auto px-4 py-8">
       {/* Breadcrumb */}
       <Breadcrumb
-        pageName="Policy Title"
+        pageName="Terms of Use"
         description="Review the Terms of Use for accessing Open Tech Innovations' website. Know your responsibilities and rights."
       />
 
