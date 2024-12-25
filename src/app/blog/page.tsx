@@ -6,8 +6,9 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Blog Page for Startup Next-js Template",
+  title: "Open Tech Innovations Blog",
+  description: "Explore insightful articles on web design, coding, and digital marketing. Stay updated with the latest trends and tips from industry experts.",
+  keywords: "web design, coding tips, digital marketing, UI components, design skills"
   // other metadata
 };
 
@@ -15,8 +16,9 @@ const Blog = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Blog Grid"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        pageName="Open Tech Innovations Blog Grid"
+        description="Explore insightful articles on web design, coding, and digital marketing. Stay updated with the latest trends and tips from industry experts."
+
       />
 
       <section className="pb-[120px] pt-[120px]">
@@ -40,7 +42,10 @@ const Blog = () => {
                 <li className="mx-1">
                   <a
                     href="#0"
-                    className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
+                    className="flex h-9 min-w-[36px] items-center justify-center rounded-md
+                    bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition
+                    hover:bg-primary hover:bg-opacity-100
+                    hover:text-white"
                   >
                     Prev
                   </a>

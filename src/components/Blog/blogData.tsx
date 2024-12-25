@@ -5,12 +5,12 @@ const blogData: Blog[] = [
     id: Number("1"),
     title: "Best UI components for modern websites",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor. consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+      "Introduction In today's digital age, user interface (UI) components play a crucial role in enhancing user experience and engagement...",
     image: "/images/blog/blog-01.jpg",
     author: {
-      name: "Samuyl Joshi",
+      name: "David B.",
       image: "/images/blog/author-01.png",
-      designation: "Graphic Designer",
+      designation: "Owner/President",
     },
     tags: ["creative"],
     publishDate: "2025",
@@ -20,12 +20,12 @@ const blogData: Blog[] = [
     id: Number("2"),
     title: "9 simple ways to improve your design skills",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+      "Introduction Design is an ever-evolving field, and continuous improvement is key to staying relevant and effective.",
     image: "/images/blog/blog-02.jpg",
     author: {
-      name: "Musharof Chy",
+      name: "David B.",
       image: "/images/blog/author-02.png",
-      designation: "Content Writer",
+      designation: "Owner/President",
     },
     tags: ["computer"],
     publishDate: "2025",
@@ -35,12 +35,12 @@ const blogData: Blog[] = [
     id: Number("3"),
     title: "Tips to quickly improve your coding speed.",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+      "Introduction Efficient coding is crucial for meeting project deadlines and enhancing productivity.",
     image: "/images/blog/blog-03.jpg",
     author: {
-      name: "Lethium Deo",
+      name: "David B.",
       image: "/images/blog/author-03.png",
-      designation: "Graphic Designer",
+      designation: "Owner/President",
     },
     tags: ["design"],
     publishDate: "2025",

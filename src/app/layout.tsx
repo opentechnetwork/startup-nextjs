@@ -6,7 +6,6 @@ import ScrollToTop from "@/components/ScrollToTop";
 import { Inter } from "next/font/google";
 import "../styles/index.css";
 import "../styles/interfont.css";
-
 import CookieConsentBanner from "@/components/CookieConsentBanner";
 
 
