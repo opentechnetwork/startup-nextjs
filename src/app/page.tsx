@@ -31,7 +31,7 @@ export default function Home() {
       <Brands />
       <AboutSectionOne />
       <AboutSectionTwo />
-      <Testimonials />
+      {/*<Testimonials />*/}
       <MainServices />
       <AdditionalServices />
       <Pricing />

@@ -122,7 +122,7 @@ const Footer = () => {
                   Useful Links
                 </h2>
                 <ul>
-                  <li>
+                 {/* <li>
                     <Link
                       href="/signin"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
@@ -137,7 +137,7 @@ const Footer = () => {
                     >
                       Sign Up
                     </Link>
-                  </li>
+                  </li>*/}
 
                   <li>
                     <Link

@@ -60,7 +60,7 @@ const Pricing = () => {
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
             packageName="Starter"
-            price={isMonthly ? "99" : "2,160"}
+            price={isMonthly ? "99" : "1,010"}
             duration={isMonthly ? "mo" : "yr"}
             subtitle="Steady growth with advanced SEO and responsive design."
           >
@@ -69,13 +69,18 @@ const Pricing = () => {
             <OfferList text="Basic PPC management" status="active" />
             <OfferList text="Contact forms setup" status="active" />
             <OfferList text="Monthly analytics reports" status="active" />
-            <OfferList text="Price: $199/month" status="active" />
+            <OfferList text="E-commerce setup (up to 20 products)" status="active" />
+            <OfferList text="Option to opt-in for Google Ads setup (2 campaign ads) with management, updates, and modifications upon request." status="active" />
             <OfferList text="Setup Fee: $150" status="active" />
+            <OfferList text="Yearly Option: $1,010 (15% discount)" status="active" />
+            <OfferList text="Quarterly Payment Plan: Available upon request" status="active" />
+
+
 
           </PricingBox>
           <PricingBox
             packageName="Professional"
-            price={isMonthly ? "299" : "4,320"}
+            price={isMonthly ? "299" : "2,153"}
             duration={isMonthly ? "mo" : "yr"}
             subtitle="Elevate your strategy with comprehensive SEO and social media."
           >
@@ -83,25 +88,34 @@ const Pricing = () => {
             <OfferList text="Social media management" status="active" />
             <OfferList text="Custom web design (up to 15 pages)" status="active" />
             <OfferList text="SEM management and setup" status="active" />
-            <OfferList text="Monthly customer reports" status="active" />
-            <OfferList text="Price: $399/month" status="active" />
+            <OfferList text="Monthly customer and analytics reports" status="active" />
+            <OfferList text="E-commerce setup (up to 75 products)" status="active" />
+            <OfferList text="Google Ads setup (3 campaign ads) with management, updates, and modifications upon request" status="active" />
             <OfferList text="Setup Fee: $200" status="active" />
+            <OfferList text="Yearly Option: $2,153 (40% discount)" status="active" />
+            <OfferList text="Quarterly Payment Plan: Available upon request" status="active" />
+
+
 
             {/* <OfferList text="Free Lifetime Updates" status="inactive" /> the status either displays a checkmark of X related to what is offered for the package.*/}
           </PricingBox>
           <PricingBox
             packageName="Premium"
-            price={isMonthly ? "499" : "6,480"}
+            price={isMonthly ? "499" : "2,994"}
             duration={isMonthly ? "mo" : "yr"}
             subtitle="Maximize impact with full-service SEO, PPC, and development"
           >
             <OfferList text="Full-service SEO and PPC" status="active" />
-            <OfferList text="Social media management" status="active" />
+            <OfferList text="Enhanced social media management" status="active" />
             <OfferList text="Custom web development (up to 20 pages)" status="active" />
             <OfferList text="Monthly backups and maintenance" status="active" />
             <OfferList text="Graphic design and stock images" status="active" />
-            <OfferList text="Price: $599/month" status="active" />
+            <OfferList text="E-commerce setup (up to 200 products)" status="active" />
+            <OfferList text="Google Ads setup (up to 5 campaign ads) with management, updates, and modifications upon request" status="active" />
             <OfferList text="Setup Fee: $300" status="active" />
+            <OfferList text="Yearly Option: $2,994 (50% discount)" status="active" />
+            <OfferList text="Quarterly Payment Plan: Available upon request" status="active" />
+
 
           </PricingBox>
         </div>
