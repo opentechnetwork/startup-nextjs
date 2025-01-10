@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <head>
-        <title>Free Next.js Template for Startup and SaaS</title>
+        <title>Open Tech Innovations | Expert Web Design, SEO, and Digital Solutions</title>
         <meta />
         <meta />
       </head>
