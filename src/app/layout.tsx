@@ -7,6 +7,7 @@ import { Inter } from "next/font/google";
 import "../styles/index.css";
 import "../styles/interfont.css";
 import CookieConsentBanner from "@/components/CookieConsentBanner";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -27,6 +28,7 @@ export default function RootLayout({
         <Providers>
           <Header />
           {children}
+          <SpeedInsights />
           <Footer />
           <CookieConsentBanner />
           <ScrollToTop />

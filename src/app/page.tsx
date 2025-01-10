@@ -14,6 +14,7 @@ import { Metadata } from "next";
 import React from 'react';
 
 
+
 export const metadata: Metadata = {
   title: "Open Tech Innovations | Expert Web Design, SEO, and Digital Solutions",
   description: "Open Tech Innovations offers custom web design, SEO optimization, AI services, and progressive web app development using Next.js and React. Enhance your online presence with our expert team and innovative strategies.",
