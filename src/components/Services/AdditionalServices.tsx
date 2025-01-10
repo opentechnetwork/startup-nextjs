@@ -11,23 +11,23 @@ export const metadata: Metadata = {
 
 const AdditionalServicesSection = () => {
   return (
-    <section className="bg-white py-16">
+    <section className="bg-white py-16 dark:bg-gray-dark md:pb-[120px]">
       <div className="container mx-auto">
         {/* Section Header */}
         <div className="mb-12 text-center">
-          <h2 className="mb-4 text-4xl font-bold text-gray-800">
+          <h2 className="mb-4 text-4xl font-bold text-gray-800 dark:text-white">
             Additional Services
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-gray-600 dark:text-white">
             We offer a range of additional services to complement your online
             presence. Explore our specialized offerings below.
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-5  md:grid-cols-2 lg:grid-cols-4">
           {/* CMS */}
-          <div className="rounded-lg bg-gray-50 p-6 shadow-md transition hover:shadow-lg">
+          <div className="rounded-sm bg-gray-50 p-6 shadow-md transition hover:shadow-lg">
             <h3 className="mb-4 text-2xl font-semibold text-gray-800">
               Content Management Systems (CMS)
             </h3>
@@ -41,7 +41,7 @@ const AdditionalServicesSection = () => {
           </div>
 
           {/* UX/UI Design */}
-          <div className="rounded-lg bg-gray-50 p-6 shadow-md transition hover:shadow-lg">
+          <div className="rounded-sm bg-gray-50 p-6 shadow-md transition hover:shadow-lg">
             <h3 className="mb-4 text-2xl font-semibold text-gray-800">
               UX/UI Design Services
             </h3>
@@ -55,7 +55,7 @@ const AdditionalServicesSection = () => {
           </div>
 
           {/* Website Maintenance */}
-          <div className="rounded-lg bg-gray-50 p-6 shadow-md transition hover:shadow-lg">
+          <div className="rounded-sm bg-gray-50 p-6 shadow-md transition hover:shadow-lg">
             <h3 className="mb-4 text-2xl font-semibold text-gray-800">
               Website Maintenance and Support
             </h3>
@@ -69,7 +69,7 @@ const AdditionalServicesSection = () => {
           </div>
 
           {/* Analytics and Reporting */}
-          <div className="rounded-lg bg-gray-50 p-6 shadow-md transition hover:shadow-lg">
+          <div className="rounded-sm bg-gray-50 p-6 shadow-md transition hover:shadow-lg">
             <h3 className="mb-4 text-2xl font-semibold text-gray-800">
               Analytics and Reporting
             </h3>
@@ -83,13 +83,14 @@ const AdditionalServicesSection = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center">
-      <div className="mb-8 mt-8 border-b border-body-color border-opacity-10 pb-8 dark:border-white dark:border-opacity-10 w-4/12 ">
-        <button className="flex w-full items-center justify-center rounded-sm bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
-          <a href="/request-a-quote">Request a Quote</a>
-        </button>
+      <div className="flex justify-center border-b border-body-color border-opacity-10">
+        <div className="mb-8 mt-8 min-w-64  pb-8 dark:border-white dark:border-opacity-10">
+          <button className="flex w-full items-center justify-center rounded-sm bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
+            <a href="/request-a-quote">Request a Quote</a>
+          </button>
+        </div>
       </div>
-      </div>
+
     </section>
   );
 };

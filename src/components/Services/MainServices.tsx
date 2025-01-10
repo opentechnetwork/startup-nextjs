@@ -10,23 +10,23 @@ export const metadata: Metadata = {
 
 const Services = () => {
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="bg-gray-50 py-16 dark:bg-gray-dark md:pb-[120px]">
       <div className="container mx-auto">
         {/* Section Header */}
-        <div className="mb-12 text-center">
-          <h2 className="mb-4 text-4xl font-bold text-gray-800">
+        <div className="mb-12 text-center ">
+          <h2 className="mb-4 text-4xl font-bold text-gray-800 dark:text-white">
             Core Services
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-gray-600 dark:text-white">
             Our services are designed to bring your business online and boost
             your presence. Explore our offerings below.
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 ">
           {/* Web Design and Development */}
-          <div className="rounded-lg bg-white p-6 shadow-md transition hover:shadow-lg">
+          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg">
             <h3 className="mb-4 text-2xl font-semibold text-gray-800">
               Web Design and Development
             </h3>
@@ -40,7 +40,7 @@ const Services = () => {
           </div>
 
           {/* SEO */}
-          <div className="rounded-lg bg-white p-6 shadow-md transition hover:shadow-lg">
+          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg">
             <h3 className="mb-4 text-2xl font-semibold text-gray-800">
               Search Engine Optimization (SEO)
             </h3>
@@ -54,7 +54,7 @@ const Services = () => {
           </div>
 
           {/* E-commerce Solutions */}
-          <div className="rounded-lg bg-white p-6 shadow-md transition hover:shadow-lg">
+          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg">
             <h3 className="mb-4 text-2xl font-semibold text-gray-800">
               E-commerce Solutions
             </h3>
@@ -67,7 +67,7 @@ const Services = () => {
           </div>
 
           {/* Digital Marketing Services */}
-          <div className="rounded-lg bg-white p-6 shadow-md transition hover:shadow-lg">
+          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg">
             <h3 className="mb-4 text-2xl font-semibold text-gray-800">
               Digital Marketing Services
             </h3>
