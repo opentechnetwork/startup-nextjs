@@ -25,7 +25,7 @@ const CookiePolicy = () => {
           className="text-blue-600 underline"
           target="_blank"
         >
-          HTML.com's Ultimate Guide to Cookies{" "}
+          HTML.com&#39;s Ultimate Guide to Cookies{" "}
         </a>
         or{" "}
         <a
@@ -33,7 +33,7 @@ const CookiePolicy = () => {
           className="text-blue-600 underline"
           target="_blank"
         >
-          Cloudflare's guide on what cookies are
+          Cloudflare&#39;s guide on what cookies are
         </a>
         .
       </p>
@@ -61,7 +61,7 @@ const CookiePolicy = () => {
           className="text-blue-600 underline"
           target="_blank"
         >
-          Google's guide on managing cookies in Chrome
+          Google&#39;s guide on managing cookies in Chrome
         </a>
         .
       </p>

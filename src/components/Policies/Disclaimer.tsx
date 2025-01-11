@@ -19,7 +19,7 @@ const Disclaimer = () => {
           className="text-blue-600 underline"
           target="_blank"
         >
-          Termly's Disclaimer Template
+          Termly&#39;s Disclaimer Template
         </a>
         .
       </p>
