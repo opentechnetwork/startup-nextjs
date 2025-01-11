@@ -10,7 +10,6 @@ import CookieConsentBanner from "@/components/CookieConsentBanner";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
@@ -21,9 +20,26 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <head>
-        <title>Open Tech Innovations | Expert Web Design, SEO, and Digital Solutions</title>
+        <title>
+          Open Tech Innovations | Expert Web Design, SEO, and Digital Solutions
+        </title>
         <meta />
         <meta />
+        {/* Google Analytics */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-YHXHN62KB1"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-YHXHN62KB1');
+            `,
+          }}
+        ></script>
       </head>
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
         <Providers>
