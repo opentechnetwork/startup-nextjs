@@ -52,7 +52,6 @@ const TermsAndConditions = () => {
       </p>
       <ul className="list-none pl-0">
         <li>Email: <a href="mailto:support@openwebcommunications.com" className="text-primary hover:underline">support@openwebcommunications.com</a></li>
-        <li>Facebook Messenger: <a href="https://m.me/OpenTechInnovations" className="text-primary hover:underline">Link to your Facebook Messenger</a></li>
       </ul>
     </section>
   );

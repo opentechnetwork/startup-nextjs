@@ -70,7 +70,6 @@ const TermsOfUse = () => {
       <p className="mb-4">If you have any questions about these Terms of Use, please contact us at:</p>
       <ul className="list-none pl-0">
         <li>Email: support@openwebcommunications.com</li>
-        <li>Facebook Messenger: [Link to your Facebook Messenger]</li>
       </ul>
     </section>
   );

@@ -28,7 +28,6 @@ const SecurityPolicy = () => {
       <p className="mb-4">For any security concerns, please contact us at:</p>
       <ul className="list-none pl-0">
         <li>Email: support@openwebcommunications.com</li>
-        <li>Facebook Messenger: [Link to your Facebook Messenger]</li>
       </ul>
     </section>
   );
