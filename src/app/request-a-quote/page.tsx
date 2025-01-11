@@ -1,14 +1,15 @@
 import React from "react";
 import Breadcrumb from "@components/Common/Breadcrumb";
 
-
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Request a Quote | Open Tech Innovations",
-  description: "Get a personalized quote for web design, SEO, and digital solutions. Contact Open Tech Innovations to discuss your project needs today.",
+  description:
+    "Get a personalized quote for web design, SEO, and digital solutions. Contact Open Tech Innovations to discuss your project needs today.",
   // other metadata
-  keywords: "Request a Quote, Web Design Quote, SEO Services Quote, Digital Solutions Quote, Open Tech Innovations"
+  keywords:
+    "Request a Quote, Web Design Quote, SEO Services Quote, Digital Solutions Quote, Open Tech Innovations",
 };
 
 const RequestAQuotePage = () => {
@@ -18,174 +19,206 @@ const RequestAQuotePage = () => {
         pageName="Get a Quote Today"
         description="Learn about Open Tech Innovations, a leader in web design, front-end development, SEO, automations, integrations, and AI services. Discover our journey and innovative approach."
       />
-      <section className="relative z-10 overflow-hidden pb-16 pt-36 md:pb-20 lg:pb-28 lg:pt-[10px]">
-        <div className="container">
+      <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
+        <div className="container mx-auto">
           <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4">
-              <div className="mx-auto max-w-[600px] rounded bg-white px-6 py-10 shadow-three dark:bg-dark sm:p-[25px]">
+            <div className="mx-auto w-full px-4 lg:w-8/12 xl:w-8/12">
+              <div
+                className="mb-12 rounded-sm bg-white px-8 py-11 shadow-three dark:bg-gray-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
+                data-wow-delay=".15s"
+              >
+                <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
+                  Need Help? Open a Ticket
+                </h2>
+                <p className="mb-12 text-base font-medium text-body-color">
+                  Our support team will get back to you ASAP via email.
+                </p>
                 <form
-                  action="https://formspree.io/f/{FORM_ID}"
-                  target="_top"
+                  action="https://formspree.io/f/xlddryge"
                   method="POST"
+                  target="_top"
                 >
                   <fieldset>
-                    <div pb-5 className="flex flex-col gap-y-1.5 pb-5">
-                      <label
-                        className="block font-[family-name:--font-family-display] text-sm font-medium text-[--color-text-default] uppercase"
-                        htmlFor="name"
-                      >
-                        Name
-                      </label>
-                      <input
-                        className="h-8 appearance-none rounded-sm border-0 px-3 text-sm text-[--color-text-default] outline-none ring-1 ring-inset ring-[--color-border-default] placeholder:text-[--color-text-muted] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-0 focus-visible:outline-[--color-highlight] focus-visible:ring-[1.5px] focus-visible:ring-inset focus-visible:ring-[--color-border-active]"
-                        id="name"
-                        name="name"
-                        type="name"
-                        required
-                      />
-                    </div>
-                    <div className="flex flex-col gap-y-1.5 pb-5">
-                      <label
-                        className="block font-[family-name:--font-family-display] text-sm font-medium text-[--color-text-default] uppercase"
-                        htmlFor="email"
-                      >
-                        Email
-                      </label>
-                      <input
-                        className="h-8 appearance-none rounded-sm border-0 px-3 text-sm text-[--color-text-default] outline-none ring-1 ring-inset ring-[--color-border-default] placeholder:text-[--color-text-muted] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-0 focus-visible:outline-[--color-highlight] focus-visible:ring-[1.5px] focus-visible:ring-inset focus-visible:ring-[--color-border-active]"
-                        id="email"
-                        name="email"
-                        type="email"
-                        required
-                      />
-                    </div>
-                    <div className="flex flex-col gap-y-1.5 pb-5">
-                      <label
-                        className="block font-[family-name:--font-family-display] text-sm font-medium text-[--color-text-default] uppercase"
-                        htmlFor="company"
-                      >
-                        Company
-                      </label>
-                      <input
-                        className="h-8 appearance-none rounded-sm border-0 px-3 text-sm text-[--color-text-default] outline-none ring-1 ring-inset ring-[--color-border-default] placeholder:text-[--color-text-muted] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-0 focus-visible:outline-[--color-highlight] focus-visible:ring-[1.5px] focus-visible:ring-inset focus-visible:ring-[--color-border-active]"
-                        id="company"
-                        name="company"
-                        type="company"
-                        required
-                      />
-                    </div>
+                    <div className="flex flex-col gap-y-5">
+                      {/* Name */}
+                      <div>
+                        <label
+                          htmlFor="name"
+                          className="block text-sm font-medium uppercase text-dark dark:text-white"
+                        >
+                          Name
+                        </label>
+                        <input
+                          type="text"
+                          id="name"
+                          name="name"
+                          placeholder="Enter your name"
+                          required
+                          className="h-10 w-full rounded-sm border px-3 text-sm outline-none focus:ring-2 focus:ring-primary dark:border-transparent dark:bg-[#2C303B] dark:text-white"
+                        />
+                      </div>
 
-                    <div className="flex flex-col gap-y-1.5 pb-5">
-                      <label
-                        className="block font-[family-name:--font-family-display] text-sm font-medium text-[--color-text-default] uppercase"
-                        htmlFor="phone-number"
-                      >
-                        Phone Number
-                      </label>
-                      <input
-                        className="h-8 appearance-none rounded-sm border-0 px-3 text-sm text-[--color-text-default] outline-none ring-1 ring-inset ring-[--color-border-default] placeholder:text-[--color-text-muted] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-0 focus-visible:outline-[--color-highlight] focus-visible:ring-[1.5px] focus-visible:ring-inset focus-visible:ring-[--color-border-active]"
-                        id="phone-number"
-                        name="phone-number"
-                        type="phone"
-                      />
-                    </div>
-                    <div className="flex flex-col gap-y-1.5 pb-5">
-                      <label
-                        className="block font-[family-name:--font-family-display] text-sm font-medium text-[--color-text-default] uppercase"
-                        htmlFor="message"
-                      >
-                        Your Message
-                      </label>
-                      <textarea
-                        className="resize-y appearance-none rounded-sm border-0 px-3 py-2 text-sm text-[--color-text-default] outline-none ring-1 ring-inset ring-[--color-border-default] placeholder:text-[--color-text-muted] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-0 focus-visible:outline-[--color-highlight] focus-visible:ring-[1.5px] focus-visible:ring-inset focus-visible:ring-[--color-border-active]"
-                        id="message"
-                        name="message"
-                        required
-                      ></textarea>
-                    </div>
-                    <div className="flex flex-col gap-y-1.5 pb-5">
-                      <label
-                        className="block font-[family-name:--font-family-display] text-sm font-medium text-[--color-text-default] uppercase"
-                        htmlFor="business-area"
-                      >
-                        What Do You Need?
-                      </label>
-                      <select
-                        className="bg-caret-down h-8 appearance-none rounded-sm border-0 bg-gray-light bg-[size:1.5em_1.5em] bg-[position:right_0.5rem_center] bg-no-repeat px-3 pe-10 text-sm text-[--color-text-default] outline-none ring-1 ring-inset ring-[--color-border-default] placeholder:text-[--color-text-muted] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-0 focus-visible:outline-[--color-highlight] focus-visible:ring-[1.5px] focus-visible:ring-inset focus-visible:ring-[--color-border-active]"
-                        id="business-area"
-                        name="business-area"
-                        required
-                      >
-                        <option value="dept-1">Web Design</option>
-                        <option value="dept-3">e-Commerce</option>
-                        <option value="dept-1">Web Development</option>
-                        <option value="dept-2">AI Integration</option>
-                        <option value="dept-3">Digital Marketing</option>
-                        <option value="dept-2">Ad Setup and Maintenance</option>
-                      </select>
-                    </div>
-                    <div className="flex flex-col gap-y-1.5 pb-5">
-                      <label
-                        className="block font-[family-name:--font-family-display] text-sm font-medium text-[--color-text-default] uppercase"
-                        htmlFor="request-type"
-                      >
-                        Type of Request
-                      </label>
-                      <select
-                        className="bg-caret-down h-8 appearance-none rounded-sm border-0 bg-white bg-[size:1.5em_1.5em] bg-[position:right_0.5rem_center] bg-no-repeat px-3 pe-10 text-sm text-[--color-text-default] outline-none ring-1 ring-inset ring-[--color-border-default] placeholder:text-[--color-text-muted] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-0 focus-visible:outline-[--color-highlight] focus-visible:ring-[1.5px] focus-visible:ring-inset focus-visible:ring-[--color-border-active]"
-                        id="request-type"
-                        name="request-type"
-                        required
-                      >
-                        <option value="product-inquiry">Product Inquiry</option>
-                        <option value="purchase-request">
-                          Purchase Request
-                        </option>
-                        <option value="general-inquiry">General Inquiry</option>
-                      </select>
-                    </div>
-                    <div className="flex flex-col gap-y-1.5 pb-5">
-                      <label
-                        className="block font-[family-name:--font-family-display] text-sm font-medium text-[--color-text-default] uppercase"
-                        htmlFor="title"
-                      >
-                        Title
-                      </label>
-                      <select
-                        className="bg-caret-down h-8 appearance-none rounded-sm border-0 bg-white bg-[size:1.5em_1.5em] bg-[position:right_0.5rem_center] bg-no-repeat px-3 pe-10 text-sm text-[--color-text-default] outline-none ring-1 ring-inset ring-[--color-border-default] placeholder:text-[--color-text-muted] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-0 focus-visible:outline-[--color-highlight] focus-visible:ring-[1.5px] focus-visible:ring-inset focus-visible:ring-[--color-border-active]"
-                        id="title"
-                        name="title"
-                        required
-                      >
-                        <option value="mr">Mr</option>
-                        <option value="ms">Ms</option>
-                        <option value="mx">Mx</option>
-                      </select>
-                    </div>
-                  </fieldset>
-                  <div className="mt-2 flex gap-x-2 pb-5">
-                    <div className="flex h-5 items-center">
-                      <input
-                        aria-describedby="dpa-consent-description"
-                        className="checked:bg-checkbox-checked h-4 w-4 rounded border border-solid border-[--color-primary] bg-white checked:border-transparent checked:bg-[--color-primary] checked:bg-[size:100%_100%] checked:bg-center checked:bg-no-repeat focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-0 focus-visible:outline-[--color-highlight]"
-                        id="dpa-consent"
-                        name="dpa-consent"
-                        required
-                        type="checkbox"
-                        value="consent"
-                      />
-                    </div>
-                    <div>
-                      <label
-                        className="block font-[family-name:--font-family-display] text-sm font-medium text-[--color-text-default] uppercase"
-                        htmlFor="dpa-consent"
-                      >
-                        Declaration of consent for data processing
-                      </label>
-                      <p
-                        className="mt-2.5 block text-sm text-[--color-text-muted]"
-                        id="dpa-consent-description"
-                      >
+                      {/* Email */}
+                      <div>
+                        <label
+                          htmlFor="email"
+                          className="block text-sm font-medium uppercase text-dark dark:text-white"
+                        >
+                          Email
+                        </label>
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          placeholder="Enter your email"
+                          required
+                          className="h-10 w-full rounded-sm border px-3 text-sm outline-none focus:ring-2 focus:ring-primary dark:border-transparent dark:bg-[#2C303B] dark:text-white"
+                        />
+                      </div>
+
+                      {/* Company */}
+                      <div>
+                        <label
+                          htmlFor="company"
+                          className="block text-sm font-medium uppercase text-dark dark:text-white"
+                        >
+                          Company
+                        </label>
+                        <input
+                          type="text"
+                          id="company"
+                          name="company"
+                          placeholder="Enter your company name"
+                          required
+                          className="h-10 w-full rounded-sm border px-3 text-sm outline-none focus:ring-2 focus:ring-primary dark:border-transparent dark:bg-[#2C303B] dark:text-white"
+                        />
+                      </div>
+
+                      {/* Phone Number */}
+                      <div>
+                        <label
+                          htmlFor="phone-number"
+                          className="block text-sm font-medium uppercase text-dark dark:text-white"
+                        >
+                          Phone Number
+                        </label>
+                        <input
+                          type="tel"
+                          id="phone-number"
+                          name="phone-number"
+                          placeholder="Enter your phone number"
+                          className="h-10 w-full rounded-sm border px-3 text-sm outline-none focus:ring-2 focus:ring-primary dark:border-transparent dark:bg-[#2C303B] dark:text-white"
+                        />
+                      </div>
+
+                      {/* Message */}
+                      <div>
+                        <label
+                          htmlFor="message"
+                          className="block text-sm font-medium uppercase text-dark dark:text-white"
+                        >
+                          Your Message
+                        </label>
+                        <textarea
+                          id="message"
+                          name="message"
+                          placeholder="Enter your message"
+                          rows={4}
+                          required
+                          className="w-full rounded-sm border px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-primary dark:border-transparent dark:bg-[#2C303B] dark:text-white"
+                        ></textarea>
+                      </div>
+
+                      {/* Dropdowns */}
+                      <div>
+                        <label
+                          htmlFor="business-area"
+                          className="block text-sm font-medium uppercase text-dark dark:text-white"
+                        >
+                          What Do You Need?
+                        </label>
+                        <select
+                          id="business-area"
+                          name="business-area"
+                          required
+                          className="h-10 w-full rounded-sm border px-3 text-sm outline-none focus:ring-2 focus:ring-primary dark:border-transparent dark:bg-[#2C303B] dark:text-white"
+                        >
+                          <option value="web-design">Web Design</option>
+                          <option value="e-commerce">e-Commerce</option>
+                          <option value="web-development">
+                            Web Development
+                          </option>
+                          <option value="ai-integration">AI Integration</option>
+                          <option value="digital-marketing">
+                            Digital Marketing
+                          </option>
+                          <option value="ad-setup">
+                            Ad Setup and Maintenance
+                          </option>
+                        </select>
+                      </div>
+
+                      <div>
+                        <label
+                          htmlFor="request-type"
+                          className="block text-sm font-medium uppercase text-dark dark:text-white"
+                        >
+                          Type of Request
+                        </label>
+                        <select
+                          id="request-type"
+                          name="request-type"
+                          required
+                          className="h-10 w-full rounded-sm border px-3 text-sm outline-none focus:ring-2 focus:ring-primary dark:border-transparent dark:bg-[#2C303B] dark:text-white"
+                        >
+                          <option value="product-inquiry">
+                            Product Inquiry
+                          </option>
+                          <option value="purchase-request">
+                            Purchase Request
+                          </option>
+                          <option value="general-inquiry">
+                            General Inquiry
+                          </option>
+                        </select>
+                      </div>
+
+                      <div>
+                        <label
+                          htmlFor="title"
+                          className="block text-sm font-medium uppercase text-dark dark:text-white"
+                        >
+                          Title
+                        </label>
+                        <select
+                          id="title"
+                          name="title"
+                          required
+                          className="h-10 w-full rounded-sm border px-3 text-sm outline-none focus:ring-2 focus:ring-primary dark:border-transparent dark:bg-[#2C303B] dark:text-white"
+                        >
+                          <option value="mr">Mr</option>
+                          <option value="ms">Ms</option>
+                          <option value="mx">Mx</option>
+                        </select>
+                      </div>
+
+                      {/* Declaration of Consent */}
+                      <div className="flex items-center gap-x-3">
+                        <input
+                          type="checkbox"
+                          id="dpa-consent"
+                          name="dpa-consent"
+                          required
+                          className="h-5 w-5 rounded-sm border outline-none focus:ring-2 focus:ring-primary dark:border-transparent dark:bg-[#2C303B] dark:text-white"
+                        />
+                        <label
+                          htmlFor="dpa-consent"
+                          className="text-sm font-medium text-dark dark:text-white"
+                        >
+                          Declaration of consent for data processing
+                        </label>
+                      </div>
+                      <p>
                         You agree that your data from the form will be collected
                         and processed to answer your request. You can revoke
                         your consent at any time for the future by e-mail to
@@ -194,15 +227,17 @@ const RequestAQuotePage = () => {
                         protection declaration.
                       </p>
                     </div>
-                  </div>
-                  <div className="col-span-full flex flex-row-reverse gap-x-3">
-                    <button
-                      className="cursor-pointer rounded-sm bg-[--color-primary] px-8 py-4 text-sm font-medium leading-4 text-white transition-colors duration-200 hover:bg-[--color-primary-active] focus-visible:bg-[--color-primary-active] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-[--color-highlight]"
-                      type="submit"
-                    >
-                      Submit
-                    </button>
-                  </div>
+
+                    {/* Submit Button */}
+                    <div className="mt-6">
+                      <button
+                        type="submit"
+                        className="w-full rounded-sm bg-primary px-9 py-4 text-sm font-medium text-white shadow-submit duration-300 hover:bg-primary/90"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </fieldset>
                 </form>
               </div>
             </div>
