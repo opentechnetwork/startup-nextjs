@@ -8,7 +8,7 @@ const CookiePolicy = () => {
       <p className="mb-8 text-lg">Effective Date: {currentDate}</p>
 
       <p className="mb-4">
-        Open Tech Innovations uses cookies on [website URL]. By using the
+        Open Tech Innovations uses cookies on opentechinnovations.com. By using the
         Service, you consent to the use of cookies.
       </p>
 
