@@ -13,11 +13,18 @@ const Hero = () => {
               <div className="mx-auto max-w-[800px] text-center">
                 <span>Grow your business with</span>
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                Open Tech Innovations
+                  Open Tech Innovations
                 </h1>
-                <h2 className="mb-5">Leading the Future in Web Design and SEO</h2>
-                <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                Open Tech Innovations (OTIN) is committed to delivering technology-driven solutions that help businesses thrive online. Our Responsive Website Designs ensure your site looks stunning and functions seamlessly on any device, tailored to meet your unique needs.
+                <h2 className="mb-5">
+                  Driving Success with Cutting-Edge Web Design, AI-Powered SEO,
+                  and Comprehensive Digital Solutions.
+                </h2>
+                <p className="contentful-paint mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
+                  Open Tech Innovations (OTIN) is committed to delivering
+                  technology-driven solutions that help businesses thrive
+                  online. Our Responsive Website Designs ensure your site looks
+                  stunning and functions seamlessly on any device, tailored to
+                  meet your unique needs.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link

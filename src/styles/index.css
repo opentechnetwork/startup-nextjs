@@ -73,3 +73,10 @@
 #navbarCollapse li a:hover::after {
   width: 100%; /* Expand the bottom border to full width */
 }
+
+@media (max-width: 768px) {
+  /* Target mobile devices */
+  .contentful-paint {
+    display: none;
+  }
+}

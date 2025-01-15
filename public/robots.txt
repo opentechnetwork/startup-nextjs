@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.opentechinnovations.com
+
+# Sitemaps
+Sitemap: https://www.opentechinnovations.com/sitemap.xml
