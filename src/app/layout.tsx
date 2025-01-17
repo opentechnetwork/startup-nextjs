@@ -9,7 +9,7 @@ import "../styles/interfont.css";
 import CookieConsentBanner from "@/components/CookieConsentBanner";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
-
+import "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
