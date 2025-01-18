@@ -1,21 +1,24 @@
 import { NextRequest, NextResponse } from 'next/server';
-
-const BLOCKED_COUNTRY = 'IT'; // Block traffic from the US
+import countries from './data/countries.json'; // Import the JSON file with blocked countries
 
 export function middleware(req: NextRequest) {
-  // Extract the visitor's country from headers
   const country = req.headers.get('x-vercel-ip-country') || 'Unknown';
 
-  console.log(`Visitor country: ${country}`); // Log the detected country
+  console.log(`Visitor country: ${country}`); // Debugging log
 
-  // Block traffic from the US
-  if (country === BLOCKED_COUNTRY) {
-    console.warn(`Blocked request from country: ${country}`);
-    const url = new URL('/access-denied', req.url); // Redirect to /access-denied
-    return NextResponse.redirect(url);
+  // Allow traffic to `/access-denied` to prevent redirect loops
+  if (req.nextUrl.pathname === '/access-denied') {
+    return NextResponse.next();
   }
 
-  // Allow traffic from other countries
+  // Check if the country is in the blocked list
+  if (countries.blockedCountries.includes(country)) {
+    console.warn(`Blocked request from country: ${country}`);
+    const url = new URL('/access-denied', req.url); // Construct absolute URL
+    return NextResponse.redirect(url); // Redirect to /access-denied
+  }
+
+  // Allow traffic for all other countries (e.g., US)
   return NextResponse.next();
 }
 
