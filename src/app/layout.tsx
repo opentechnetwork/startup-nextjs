@@ -10,6 +10,8 @@ import CookieConsentBanner from "@/components/CookieConsentBanner";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import "next/script";
+import { usePathname } from 'next/navigation';
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
@@ -17,6 +19,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname();
+
+  // Exclude navigation and footer for specific routes
+  const isIsolatedRoute = pathname === '/access-denied';
+
   return (
     <html suppressHydrationWarning lang="en">
       <head>
@@ -43,11 +50,11 @@ export default function RootLayout({
       </head>
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
         <Providers>
-          <Header />
+          {!isIsolatedRoute && <Header />}
           {children}
           <SpeedInsights />
           <Analytics />
-          <Footer />
+          {!isIsolatedRoute && <Footer />}
           <CookieConsentBanner />
           <ScrollToTop />
         </Providers>
