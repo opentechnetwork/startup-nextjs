@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const BLOCKED_COUNTRY = 'US'; // Block traffic from the US
+const BLOCKED_COUNTRY = 'IT'; // Block traffic from the US
 
 export function middleware(req: NextRequest) {
   // Extract the visitor's country from headers
