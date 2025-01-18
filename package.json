@@ -22,7 +22,7 @@
     "express": "^4.21.2",
     "geoip-lite": "^1.4.10",
     "minimatch": "^10.0.1",
-    "next": "15.1.2",
+    "next": "^15.1.5",
     "next-sitemap": "^4.2.3",
     "next-themes": "^0.4.4",
     "nodemailer": "^6.9.16",
@@ -35,6 +35,7 @@
   "devDependencies": {
     "@types/cssstyle": "^2.2.4",
     "@types/estree": "^1.0.6",
+    "@types/geoip-lite": "^1.4.4",
     "@types/json-schema": "^7.0.15",
     "@types/node": "^22.10.1",
     "@types/prop-types": "^15.7.14",

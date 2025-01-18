@@ -1,33 +1,20 @@
-import { NextResponse } from 'next/server';
-import geoip from 'geoip-lite';
+import { NextRequest, NextResponse } from 'next/server';
 
-export function middleware(request: Request) {
-  // Get the client's IP address
-  const ip = request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || '127.0.0.1';
+const BLOCKED_COUNTRY = 'US'; // Example blocked country
 
-  // Perform GeoIP lookup
-  const geo = geoip.lookup(ip);
+export function middleware(req: NextRequest) {
+  const country = req.headers.get('x-vercel-ip-country') || 'Unknown';
 
-  // Log IP and GeoIP details for debugging
-  console.log(`Incoming request from IP: ${ip}, Geo Info: ${geo ? JSON.stringify(geo) : 'Not Found'}`);
+  console.log(`Visitor country: ${country}`);
 
-  // Handle failed GeoIP lookups
-  if (!geo) {
-    console.warn(`Geo lookup failed for IP: ${ip}`);
-    return new Response('Access Denied: Unable to determine location', { status: 403 });
+  // Redirect visitors from blocked countries to /non-legal
+  if (country === BLOCKED_COUNTRY) {
+    return NextResponse.redirect('/non-legal');
   }
 
-  // Block requests from non-US countries
-  if (geo.country !== 'US') {
-    console.warn(`Blocked request from IP: ${ip}, Country: ${geo.country}`);
-    return new Response('Access Denied: Restricted Country', { status: 403 });
-  }
-
-  // Allow the request to proceed
   return NextResponse.next();
 }
 
-// Apply middleware to all routes
 export const config = {
-  matcher: '/:path*',
+  matcher: '/:path*', // Apply to all routes
 };
