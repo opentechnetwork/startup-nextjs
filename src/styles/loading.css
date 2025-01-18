@@ -1,0 +1,58 @@
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000; /* Black background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it overlays everything */
+}
+
+.loading-text {
+  font-size: 2.5rem;
+  font-family: "Orbitron", monospace; /* Futuristic font */
+  color: #374da3; /* Neon green */
+  text-transform: uppercase;
+  letter-spacing: 0.2rem; /* Slight spacing for a cleaner look */
+  margin-bottom: 20px; /* Space between text and the bar */
+  text-align: center;
+}
+
+.blinking {
+  animation: blink 1s step-start infinite; /* Blinking effect */
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.loading-bar {
+  width: 30%; /* Match the text width for better alignment */
+  height: 10px; /* Slimmer bar */
+  background: #333; /* Dark gray background for contrast */
+  border-radius: 3px; /* Rounded edges */
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress {
+  width: 0%;
+  height: 100%;
+  background: #5a6470; /* Green progress bar */
+  animation: load 5s linear forwards; /* Reduced from 5s to 3s */
+}
+
+@keyframes load {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
