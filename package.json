@@ -35,6 +35,7 @@
     "react-modal": "^3.16.1"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^15.1.5",
     "@types/cssstyle": "^2.2.4",
     "@types/estree": "^1.0.6",
     "@types/geoip-lite": "^1.4.4",

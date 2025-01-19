@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const withBundleAnalyzer = require("@next/bundle-analyzer")({
+  enabled: process.env.ANALYZE === "true",
+});
 
+const nextConfig = {
+  output: "standalone", // Enables more modern builds
   images: {
     remotePatterns: [
       {
@@ -11,10 +15,17 @@ const nextConfig = {
       {
         protocol: "http",
         hostname: "localhost",
-        port: "3000", // Replace with the port your localhost is running on, if applicable
+        port: "3000",
       },
     ],
   },
+  webpack(config) {
+    config.optimization.splitChunks = {
+      chunks: "all",
+      maxSize: 200000, // Optimize chunk sizes
+    };
+    return config;
+  },
 };
 
-module.exports = nextConfig;
+module.exports = withBundleAnalyzer(nextConfig);
