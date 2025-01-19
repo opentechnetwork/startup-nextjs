@@ -25,7 +25,12 @@ const Video = () => {
               data-wow-delay=".15s"
             >
               <div className="relative aspect-[77/40] items-center justify-center">
-                <Image src="/images/video/video.jpg" alt="video image" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+                <Image
+                  src="/images/video/video.jpg"
+                  alt="video image"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
                 <div className="absolute right-0 top-0 flex h-full w-full items-center justify-center">
                   <button
                     aria-label="video play button"
@@ -68,13 +73,12 @@ const Video = () => {
           ></iframe>
           <button
             onClick={() => setOpen(false)}
-            className="mt-4 bg-primary text-white px-4 py-2 rounded"
+            className="mt-4 rounded bg-primary px-4 py-2 text-white"
           >
             Close
           </button>
         </div>
       </ReactModal>
-
 
       <div className="absolute bottom-0 left-0 right-0 z-[-1] h-full w-full bg-[url(/images/video/shape.svg)] bg-cover bg-center bg-no-repeat"></div>
     </section>

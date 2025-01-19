@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import React from "react";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Enhance Your Digital Strategy with Our Additional Services",
@@ -86,7 +87,9 @@ const AdditionalServicesSection = () => {
       <div className="flex justify-center border-b border-body-color border-opacity-10">
         <div className="mb-8 mt-8 min-w-64  pb-8 dark:border-white dark:border-opacity-10">
           <button className="flex w-full items-center justify-center rounded-sm bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
-            <a href="/request-a-quote">Request a Quote</a>
+            <Link href="/request-a-quote" className="button-class">
+              Request a Quote
+            </Link>
           </button>
         </div>
       </div>
