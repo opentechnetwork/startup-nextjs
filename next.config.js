@@ -19,6 +19,19 @@ const nextConfig = {
       },
     ],
   },
+  async headers() {
+    return [
+      {
+        source: '/(.*)', // Apply to all routes
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable', // Cache for 1 year
+          },
+        ],
+      },
+    ];
+  },
   webpack(config) {
     config.optimization.splitChunks = {
       chunks: "all",
