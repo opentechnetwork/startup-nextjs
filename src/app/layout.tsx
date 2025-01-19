@@ -1,36 +1,36 @@
 "use client";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
+import CookieConsentBanner from "@/components/CookieConsentBanner";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
+import Loading from "@/components/loading"; // Ensure correct path
 import { Inter } from "next/font/google";
 import "../styles/index.css";
 import "../styles/interfont.css";
 import "../styles/loading.css";
-import "../styles/googlefonts.css";
-import CookieConsentBanner from "@/components/CookieConsentBanner";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Analytics } from "@vercel/analytics/react";
-import "next/script";
-import { usePathname } from 'next/navigation';
-import Loading from "@/components/loading"; // Import the Loading component
+import "../styles/googlefonts.css"
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
-  children,
-}: {
+                                     children,
+                                   }: {
   children: React.ReactNode;
 }) {
-
   const pathname = usePathname();
-  // Exclude navigation and footer for specific routes
-  const isIsolatedRoute = pathname === '/access-denied';
+
+  // Exclude Header and Footer for isolated routes
+  const isIsolatedRoute = pathname === "/access-denied";
 
   const [isLoading, setIsLoading] = useState(true);
 
   const handleLoadingFinish = () => {
-    setIsLoading(false); // Hide the loading screen when complete
+    setIsLoading(false); // Hide loading screen after completion
   };
 
   return (
@@ -42,11 +42,14 @@ export default function RootLayout({
         <meta />
         <meta />
         {/* Google Analytics */}
-        <script
-          async
+        <Script
+          strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-YHXHN62KB1"
-        ></script>
-        <script
+        ></Script>
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -55,7 +58,7 @@ export default function RootLayout({
               gtag('config', 'G-YHXHN62KB1');
             `,
           }}
-        ></script>
+        ></Script>
       </head>
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
         <Providers>
@@ -64,7 +67,7 @@ export default function RootLayout({
           {!isLoading && children}
           <SpeedInsights />
           <Analytics />
-          {!isIsolatedRoute && <Footer />}
+          <Footer />
           <CookieConsentBanner />
           <ScrollToTop />
         </Providers>

@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { SiVercel, SiNextdotjs, SiReact, SiTailwindcss } from "react-icons/si"; // Import icons
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -122,7 +123,7 @@ const Footer = () => {
                   Useful Links
                 </h2>
                 <ul>
-                 {/* <li>
+                  {/* <li>
                     <Link
                       href="/signin"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
@@ -254,8 +255,9 @@ const Footer = () => {
           </div>
 
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
-          <div className="py-8">
-            <p className="text-center text-base text-body-color dark:text-white">
+          <div className="py-8 text-center">
+            {/* First Row: Copyright Section */}
+            <p className="text-sm text-body-color dark:text-white">
               &copy; {currentYear}{" "}
               <a
                 href="https://www.opentechinnovations.com"
@@ -284,6 +286,53 @@ const Footer = () => {
                 All Rights Reserved.
               </a>
             </p>
+
+            {/* Second Row: Powered By Section */}
+            <div className="mt-5 h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
+
+            <div className="mt-4 flex flex-col items-center">
+              <div className="flex items-center space-x-4">
+                <span className="text-sm uppercase text-body-color dark:text-white">
+                  Powered by
+                </span>
+                <a
+                  href="https://vercel.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-2xl text-body-color hover:text-primary dark:text-white"
+                >
+                  <SiVercel />
+                </a>
+                <span className="text-sm uppercase text-body-color dark:text-white">
+                  Built with
+                </span>
+                <a
+                  href="https://nextjs.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-2xl text-body-color hover:text-primary dark:text-white"
+                >
+                  <SiNextdotjs />
+                </a>
+
+                <a
+                  href="https://reactjs.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-2xl text-body-color hover:text-primary dark:text-white"
+                >
+                  <SiReact className="h-6 w-6 text-sky-500"/>
+                </a>
+                <a
+                  href="https://tailwindcss.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary"
+                >
+                  <SiTailwindcss className="h-6 w-6 text-sky-500" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
         <div className="absolute right-0 top-14 z-[-1]">
