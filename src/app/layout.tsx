@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import CookieConsentBanner from "@/components/CookieConsentBanner";
+import GoogleAnalytics from "@components/anaytics/GoogleAnalytics";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import Loading from "@/components/loading"; // Ensure correct path
@@ -12,14 +13,13 @@ import { Inter } from "next/font/google";
 import "../styles/index.css";
 import "../styles/interfont.css";
 import "../styles/loading.css";
-import "../styles/googlefonts.css"
-import Script from "next/script";
+import "../styles/googlefonts.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
-                                     children,
-                                   }: {
+  children,
+}: {
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
@@ -41,24 +41,7 @@ export default function RootLayout({
         </title>
         <meta />
         <meta />
-        {/* Google Analytics */}
-        <Script
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-YHXHN62KB1"
-        ></Script>
-        <Script
-          id="google-analytics"
-          strategy="afterInteractive"
-
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-YHXHN62KB1');
-            `,
-          }}
-        ></Script>
+        <GoogleAnalytics />
       </head>
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
         <Providers>
