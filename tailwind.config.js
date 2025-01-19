@@ -56,6 +56,19 @@
           dark: "#1E232E",
           light: "#F0F2F9",
         },
+        nextjs: {
+          light: '#ffffff', // White for dark backgrounds
+          dark: '#000000',  // Black for light backgrounds
+        },
+        react: {
+          react: '#61DAFB', // Official React Blue
+        },
+        tailwind: {
+          tailwind: '#38BDF8', // Official Tailwind Blue
+        },
+        typescript: {
+          typescript: '#3178C6', // Official TypeScript Blue
+        },
       },
 
       boxShadow: {

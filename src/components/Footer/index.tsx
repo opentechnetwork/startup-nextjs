@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { SiVercel, SiNextdotjs, SiReact, SiTailwindcss } from "react-icons/si"; // Import icons
+import { SiVercel, SiNextdotjs, SiReact, SiTailwindcss, SiTypescript  } from "react-icons/si"; // Import icons
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -314,6 +314,15 @@ const Footer = () => {
                 >
                   <SiNextdotjs />
                 </a>
+                {/* TypeScript Icon */}
+                <a
+                  href="https://typescriptlang.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-500"
+                >
+                  <SiTypescript className="h-6 w-6 text-typescript-typescript" />
+                </a>
 
                 <a
                   href="https://reactjs.org"
@@ -321,7 +330,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-2xl text-body-color hover:text-primary dark:text-white"
                 >
-                  <SiReact className="h-6 w-6 text-sky-500"/>
+                  <SiReact className="h-6 w-6 text-react-react"/>
                 </a>
                 <a
                   href="https://tailwindcss.com"
@@ -329,8 +338,9 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="hover:text-primary"
                 >
-                  <SiTailwindcss className="h-6 w-6 text-sky-500" />
+                  <SiTailwindcss className="h-6 w-6 text-tailwind-tailwind" />
                 </a>
+
               </div>
             </div>
           </div>
