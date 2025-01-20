@@ -22,7 +22,7 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: '/(.*)', // Apply to all routes
+        source: '/_vercel//(.*)', // Apply to all routes
         headers: [
           {
             key: 'Cache-Control',

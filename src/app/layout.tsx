@@ -9,6 +9,7 @@ import GoogleAnalytics from "@components/anaytics/GoogleAnalytics";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import Loading from "@/components/loading"; // Ensure correct path
+import ServiceWorker from "@components/ServiceWorker";
 import { Inter } from "next/font/google";
 import "../styles/index.css";
 import "../styles/interfont.css";
@@ -47,6 +48,7 @@ export default function RootLayout({
         <Providers>
           {!isIsolatedRoute && <Header />}
           {isLoading && <Loading onFinish={handleLoadingFinish} />}
+          <ServiceWorker /> {/* Register Service Worker */}
           {!isLoading && children}
           <SpeedInsights />
           <Analytics />
