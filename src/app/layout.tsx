@@ -11,7 +11,7 @@ import { Analytics } from "@vercel/analytics/react";
 import Loading from "@/components/loading";
 import ServiceWorker from "@components/ServiceWorker";
 import "../styles/index.css";
-import "../styles/interfont.css";
+
 import "../styles/loading.css";
 import "../styles/googlefonts.css";
 
