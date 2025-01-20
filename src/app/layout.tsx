@@ -10,13 +10,13 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import Loading from "@/components/loading"; // Ensure correct path
 import ServiceWorker from "@components/ServiceWorker";
-import { Inter } from "next/font/google";
 import "../styles/index.css";
 import "../styles/interfont.css";
 import "../styles/loading.css";
 import "../styles/googlefonts.css";
 
-const inter = Inter({ subsets: ["latin"] });
+
+
 
 export default function RootLayout({
   children,
@@ -42,9 +42,10 @@ export default function RootLayout({
         </title>
         <meta />
         <meta />
+
         <GoogleAnalytics />
       </head>
-      <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
+      <body className={`bg-[#FCFCFC] dark:bg-black`}>
         <Providers>
           {!isIsolatedRoute && <Header />}
           {isLoading && <Loading onFinish={handleLoadingFinish} />}
