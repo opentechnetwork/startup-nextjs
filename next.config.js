@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
-  enabled: process.env.ANALYZE === "true",
+  enabled: process.env.ANALYZE === "false",
 });
 
 const nextConfig = {
-  output: "standalone", // Enables more modern builds
+  output: "false", // Enables more modern builds
   images: {
     remotePatterns: [
       {

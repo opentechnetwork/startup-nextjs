@@ -8,14 +8,12 @@ import CookieConsentBanner from "@/components/CookieConsentBanner";
 import GoogleAnalytics from "@components/anaytics/GoogleAnalytics";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
-import Loading from "@/components/loading"; // Ensure correct path
+import Loading from "@/components/loading";
 import ServiceWorker from "@components/ServiceWorker";
 import "../styles/index.css";
 import "../styles/interfont.css";
 import "../styles/loading.css";
 import "../styles/googlefonts.css";
-
-
 
 
 export default function RootLayout({
@@ -42,7 +40,6 @@ export default function RootLayout({
         </title>
         <meta />
         <meta />
-
         <GoogleAnalytics />
       </head>
       <body className={`bg-[#FCFCFC] dark:bg-black`}>

@@ -26,11 +26,11 @@ const Services = () => {
         {/* Services Grid */}
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 ">
           {/* Web Design and Development */}
-          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg">
-            <h3 className="mb-4 text-2xl font-semibold text-gray-800">
+          <div className="rounded-sm bg-white p-6 shadow-md transition dark:bg-gray-900 dark:shadow-zinc-800 text-center">
+            <h3 className="mb-4 text-2xl font-semibold text-gray-800 dark:text-white">
               Web Design and Development
             </h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 dark:text-white">
               At Open Tech Innovations, our Custom Web Design and Professional
               Web Development services are crafted to create responsive,
               visually engaging websites that capture your brand&#39;s unique
@@ -40,11 +40,11 @@ const Services = () => {
           </div>
 
           {/* SEO */}
-          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg">
-            <h3 className="mb-4 text-2xl font-semibold text-gray-800">
+          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg dark:bg-gray-900 dark:shadow-zinc-800 text-center">
+            <h3 className="mb-4 text-2xl font-semibold text-gray-800 dark:text-white">
               Search Engine Optimization (SEO)
             </h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 dark:text-white">
               Our cutting-edge SEO Optimization services are designed to enhance
               your online visibility and drive qualified traffic. Through
               comprehensive Keyword Research, On-page SEO, and strategic content
@@ -54,11 +54,11 @@ const Services = () => {
           </div>
 
           {/* E-commerce Solutions */}
-          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg">
-            <h3 className="mb-4 text-2xl font-semibold text-gray-800">
+          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg dark:bg-gray-900 dark:shadow-zinc-800 text-center">
+            <h3 className="mb-4 text-2xl font-semibold text-gray-800 dark:text-white">
               E-commerce Solutions
             </h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 dark:text-white">
               Our E-commerce Solutions offer secure, scalable websites with
               seamless Payment Gateway Integration, providing a flawless online
               shopping experience. We focus on optimizing your e-commerce
@@ -67,11 +67,11 @@ const Services = () => {
           </div>
 
           {/* Digital Marketing Services */}
-          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg">
-            <h3 className="mb-4 text-2xl font-semibold text-gray-800">
+          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg dark:bg-gray-900 dark:shadow-zinc-800 text-center">
+            <h3 className="mb-4 text-2xl font-semibold text-gray-800 dark:text-white">
               Digital Marketing Services
             </h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 dark:text-white">
               Our comprehensive Digital Marketing Services are designed to
               amplify your brand&#39;s presence. We provide strategic Social Media
               Management and Content Marketing to engage your audience
@@ -80,6 +80,7 @@ const Services = () => {
           </div>
         </div>
       </div>
+
     </section>
   );
 };
