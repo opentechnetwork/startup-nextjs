@@ -8,7 +8,6 @@ import CookieConsentBanner from "@/components/CookieConsentBanner";
 import GoogleAnalytics from "@components/anaytics/GoogleAnalytics";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
-import Loading from "@/components/loading";
 import ServiceWorker from "@components/ServiceWorker";
 import "../styles/index.css";
 
@@ -23,14 +22,7 @@ export default function RootLayout({
 }) {
   const pathname = usePathname();
 
-  // Exclude Header and Footer for isolated routes
-  const isIsolatedRoute = pathname === "/access-denied";
 
-  const [isLoading, setIsLoading] = useState(true);
-
-  const handleLoadingFinish = () => {
-    setIsLoading(false); // Hide loading screen after completion
-  };
 
   return (
     <html suppressHydrationWarning lang="en">
@@ -44,10 +36,9 @@ export default function RootLayout({
       </head>
       <body className={`bg-[#FCFCFC] dark:bg-black`}>
         <Providers>
-          {!isIsolatedRoute && <Header />}
-          {isLoading && <Loading onFinish={handleLoadingFinish} />}
+          <Header />
           <ServiceWorker /> {/* Register Service Worker */}
-          {!isLoading && children}
+          {children}
           <SpeedInsights />
           <Analytics />
           <Footer />
