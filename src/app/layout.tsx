@@ -10,10 +10,8 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import ServiceWorker from "@components/ServiceWorker";
 import "../styles/index.css";
-
 import "../styles/loading.css";
 import "../styles/googlefonts.css";
-
 
 export default function RootLayout({
   children,
@@ -21,8 +19,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
-
-
 
   return (
     <html suppressHydrationWarning lang="en">
