@@ -33,12 +33,44 @@ const nextConfig = {
     ];
   },
   webpack(config) {
-    config.optimization.splitChunks = {
+    config["optimization"].splitChunks = {
       chunks: "all",
       maxSize: 200000, // Optimize chunk sizes
     };
     return config;
   },
+
+  async redirects() {
+    return [
+      {
+        source: "/our-comprehensive-seo-process",
+        destination: "/pricing",
+        permanent: true, // 301 redirect
+      },
+      {
+        source: "/blog-details",
+        destination: "/", // Redirects to the homepage
+        permanent: true,
+      },
+      {
+        source: "/building-around-open-communication",
+        destination: "/services",
+        permanent: true,
+      },
+      {
+        source: "/quality-design-with-you-in-mind",
+        destination: "/services",
+        permanent: true,
+      },
+      {
+        source: "/david-burns-2023-resume",
+        destination: "/", // Redirecting to the homepage
+        permanent: true,
+      },
+    ];
+  },
 };
+
+
 
 module.exports = withBundleAnalyzer(nextConfig);
