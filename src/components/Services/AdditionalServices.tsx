@@ -1,14 +1,6 @@
-import { Metadata } from "next";
 import React from "react";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Enhance Your Digital Strategy with Our Additional Services",
-  description:
-    "Discover Open Tech Innovations&#39; additional services: UX/UI design, CMS solutions, website maintenance, analytics, and advanced integrations. Elevate your digital strategy with our comprehensive enhancements.",
-  keywords:
-    "UX/UI design, CMS solutions, website maintenance, analytics, advanced integrations, content management, digital strategy, Open Tech Innovations, website support",
-};
 
 const AdditionalServicesSection = () => {
   return (

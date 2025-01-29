@@ -1,12 +1,5 @@
-import { Metadata } from "next";
+import React from "react";
 
-export const metadata: Metadata = {
-  title: "Comprehensive Core Services: Web Design, SEO, SEM, E-commerce & More",
-  description:
-    "Explore Open Tech Innovations&#39; core services including custom web design, SEO optimization, SEM management, e-commerce solutions, and digital marketing. Boost your brand&#39;s online presence with our expert solutions.",
-  keywords:
-    "web design, SEO optimization, SEM management, e-commerce solutions, digital marketing, AI integrations, Open Tech Innovations, online presence, brand visibility",
-};
 
 const Services = () => {
   return (
