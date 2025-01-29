@@ -70,7 +70,7 @@
   }
 }
 
-/* Overlay Styling
+/* Overlay Styling*/
 .Overlay {
   position: fixed;
   top: 0;
@@ -82,7 +82,7 @@
   justify-content: center;
   align-items: center;
   z-index: 9999;
-}*/
+}
 
 /* Modal Styling */
 .Modal {
