@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+
 import { usePathname } from "next/navigation";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -10,7 +10,6 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import ServiceWorker from "@components/ServiceWorker";
 import "../styles/index.css";
-import "../styles/loading.css";
 import "../styles/googlefonts.css";
 
 export default function RootLayout({
@@ -26,7 +25,6 @@ export default function RootLayout({
         <title>
           Open Tech Innovations | Expert Web Design, SEO, and Digital Solutions
         </title>
-        <meta />
         <meta />
         <GoogleAnalytics />
       </head>

@@ -1,7 +1,6 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import CustomSolutions from "@/components/CustomSolutions";
-import PlaceholderComponent from "@/components/CustomSolutions";
-// ^ Replace with the actual component import for your page content
+
 
 import { Metadata } from "next";
 

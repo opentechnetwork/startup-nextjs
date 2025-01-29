@@ -97,7 +97,7 @@ const BlogSidebarPage = () => {
                   </div>
                   <div className="mb-5">
                     <a
-                      href="#0"
+                      href="#"
                       className="inline-flex items-center justify-center rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white"
                     >
                       Design
@@ -406,7 +406,7 @@ const BlogSidebarPage = () => {
                 <ul className="px-8 py-6">
                   <li>
                     <a
-                      href="#0"
+                      href="#"
                       className="mb-3 inline-block text-base font-medium text-body-color hover:text-primary"
                     >
                       Tailwind Templates
@@ -414,7 +414,7 @@ const BlogSidebarPage = () => {
                   </li>
                   <li>
                     <a
-                      href="#0"
+                      href="#"
                       className="mb-3 inline-block text-base font-medium text-body-color hover:text-primary"
                     >
                       Landing page
@@ -422,7 +422,7 @@ const BlogSidebarPage = () => {
                   </li>
                   <li>
                     <a
-                      href="#0"
+                      href="#"
                       className="mb-3 inline-block text-base font-medium text-body-color hover:text-primary"
                     >
                       Startup
@@ -430,7 +430,7 @@ const BlogSidebarPage = () => {
                   </li>
                   <li>
                     <a
-                      href="#0"
+                      href="#"
                       className="mb-3 inline-block text-base font-medium text-body-color hover:text-primary"
                     >
                       Business
@@ -438,7 +438,7 @@ const BlogSidebarPage = () => {
                   </li>
                   <li>
                     <a
-                      href="#0"
+                      href="#"
                       className="mb-3 inline-block text-base font-medium text-body-color hover:text-primary"
                     >
                       Multipurpose

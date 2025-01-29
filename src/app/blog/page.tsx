@@ -41,7 +41,7 @@ const Blog = () => {
                 {/* Pagination or additional controls */}
                 <li className="mx-1">
                   <a
-                    href="#0"
+                    href="#"
                     className="flex h-9 min-w-[36px] items-center justify-center rounded-md
                     bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition
                     hover:bg-primary hover:bg-opacity-100
