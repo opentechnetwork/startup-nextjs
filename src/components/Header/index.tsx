@@ -59,15 +59,15 @@ const Header = () => {
                 <Image
                   src="/images/logo/otin.svg"
                   alt="logo"
-                  width={140}
-                  height={30}
+                  width={400}
+                  height={100}
                   className="w-full dark:hidden"
                 />
                 <Image
                   src="/images/logo/otin-dark.svg"
                   alt="logo"
-                  width={140}
-                  height={30}
+                  width={400}
+                  height={100}
                   className="hidden w-full dark:block"
                 />
               </Link>
