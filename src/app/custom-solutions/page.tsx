@@ -2,7 +2,7 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import CustomSolutions from "@/components/CustomSolutions";
 
 
-import Metadata from "next";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   // Replace with your page’s actual title

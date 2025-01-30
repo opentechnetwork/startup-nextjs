@@ -1,7 +1,7 @@
 import PricingPlans from "@/components/Pricing";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 
-import Metadata from "next";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Pricing | Transparent Plans for Your Needs",

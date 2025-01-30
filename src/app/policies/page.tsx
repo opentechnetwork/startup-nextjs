@@ -1,7 +1,9 @@
 import Link from "next/link";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 
-export const metadata = {
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Policies | Transparent Plans for Your Needs",
   description: "Explore the various policies we have, such as Privacy Policy, Terms of Use, and more.",
 };

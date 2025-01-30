@@ -2,7 +2,7 @@ import MainServices from "@/components/Services/MainServices";
 import AdditionalServices from "@/components/Services/AdditionalServices";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 
-import Metadata from "next";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Open Tech Innovations: Expert Web Design, SEO, and Digital Services",

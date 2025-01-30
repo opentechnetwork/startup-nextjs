@@ -10,7 +10,7 @@ import CustomSolutions from "@components/CustomSolutions";
 import Video from "@/components/Video";
 import MainServices from "@/components/Services/MainServices";
 import AdditionalServices from "@/components/Services/AdditionalServices";
-import Metadata from "next";
+import { Metadata } from "next";
 import React from 'react';
 
 

@@ -1,7 +1,7 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import SecurityPolicy from "@/components/Policies/SecurityPolicy"; // Replace with the correct component import
 
-import Metadata from "next";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Security Policy | Open Tech Innovation",

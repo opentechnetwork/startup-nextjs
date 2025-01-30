@@ -1,7 +1,7 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import CookiePolicy from "@/components/Policies/CookiePolicy"; // Replace with the correct component import
 
-import Metadata from "next";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Cookie Policy | Open Tech Innovations",

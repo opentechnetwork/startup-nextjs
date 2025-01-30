@@ -1,7 +1,7 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import Disclaimer from "@/components/Policies/Disclaimer"; // Replace with the correct component import
 
-import Metadata from "next";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Disclaimer | Open Tech Innovations",
