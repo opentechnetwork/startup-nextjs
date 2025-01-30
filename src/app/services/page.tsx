@@ -1,8 +1,9 @@
-import MainServices from "@/components/Services/MainServices";
+import CoreServices from "@/components/Services/MainServices";
 import AdditionalServices from "@/components/Services/AdditionalServices";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 
 import { Metadata } from "next";
+
 
 export const metadata: Metadata = {
   title: "Open Tech Innovations: Expert Web Design, SEO, and Digital Services",
@@ -18,7 +19,7 @@ const ServicesPage = () => {
         pageName="Comprehensive Digital Services by Open Tech Innovations"
         description="Discover Open Tech Innovations' comprehensive services, including web design, SEO, SEM, e-commerce solutions, and digital marketing. Enhance your strategy with UX/UI design, CMS, website maintenance, analytics, and advanced integrations for a seamless digital experience."
       />
-      <MainServices />
+      <CoreServices />
       <AdditionalServices />
     </>
   );

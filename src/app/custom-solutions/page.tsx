@@ -1,8 +1,9 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import CustomSolutions from "@/components/CustomSolutions";
+import FeaturesGrid from "@/components/CustomSolutions";
 
 
 import { Metadata } from "next";
+
 
 export const metadata: Metadata = {
   // Replace with your page’s actual title
@@ -29,7 +30,7 @@ const CustomSolutionsPage = () => {
       />
 
       {/* Main Content Component */}
-      <CustomSolutions />
+      <FeaturesGrid />
       {/* ^ Swap out the above component with the real component for this page */}
     </div>
   );

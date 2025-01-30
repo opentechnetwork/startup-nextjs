@@ -57,14 +57,14 @@ const Header = () => {
                 } `}
               >
                 <Image
-                  src="/images/logo/otin-dark.svg"
+                  src="/images/logo/otin-dark-branding.svg"
                   alt="logo"
                   width={140}
                   height={30}
                   className="w-full dark:hidden"
                 />
                 <Image
-                  src="/images/logo/otin.svg"
+                  src="/images/logo/otin-light-branding.svg"
                   alt="logo"
                   width={140}
                   height={30}
@@ -110,7 +110,7 @@ const Header = () => {
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                            className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6  ${
                               usePathName === menuItem.path
                                 ? "text-primary dark:text-white"
                                 : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
@@ -162,12 +162,9 @@ const Header = () => {
                 </nav>
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
-                { /* <Link
-                  href="/signin"
-                  className="hidden px-7 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:block"
-                >
-                  Sign In
-                </Link>*/}
+                <span className="hidden px-7 py-3 text-base font-semibold text-dark hover:opacity-70 dark:text-white md:block">
+                  (469) 260-8160
+                </span>
                 <Link
                   href="/request-a-quote"
                   className="ease-in-up hidden rounded-sm bg-primary px-8 py-3 text-base font-medium text-white shadow-btn transition duration-300 hover:bg-opacity-90 hover:shadow-btn-hover md:block md:px-9 lg:px-6 xl:px-9"
