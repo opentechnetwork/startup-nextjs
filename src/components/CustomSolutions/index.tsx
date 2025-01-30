@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CustomSolutionsPage() {
   return (
-    <section className="bg-gray-50 py-16 dark:bg-gray-dark md:pb-[120px]">
+    <section className="bg-gray-90 py-16 ">
       <div className="container mx-auto">
         {/* Section Header */}
         <div className="mb-12 text-center">
@@ -20,7 +20,7 @@ export default function CustomSolutionsPage() {
         {/* Services Grid */}
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-2">
           {/* Column 1: Tailored Design & Client-Centric Approach */}
-          <div className="rounded-sm bg-white p-6 shadow-md transition dark:bg-gray-900 dark:shadow-zinc-800 text-center">
+          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg dark:bg-gray-dark  dark:shadow-zinc-800 text-center">
             <h3 className="mb-4 text-2xl font-semibold text-gray-800 dark:text-white">
               Tailored Design
             </h3>
@@ -38,7 +38,7 @@ export default function CustomSolutionsPage() {
           </div>
 
           {/* Column 2: Managed Services for Seamless Online Operations */}
-          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg dark:bg-gray-900 dark:shadow-zinc-800 text-center">
+          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg dark:bg-gray-dark  dark:shadow-zinc-800 text-center">
             <h3 className="mb-4 text-2xl font-semibold text-gray-800 dark:text-white">
               Managed Services for Seamless Online Operations
             </h3>
@@ -61,7 +61,7 @@ export default function CustomSolutionsPage() {
           </div>
 
           {/* Column 3: Client-Centric Web Development */}
-          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg dark:bg-gray-900 dark:shadow-zinc-800 text-center">
+          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg dark:bg-gray-dark  dark:shadow-zinc-800 text-center">
             <h3 className="mb-4 text-2xl font-semibold text-gray-800 dark:text-white">
               Client-Centric Approach to Web Development
             </h3>
@@ -83,7 +83,7 @@ export default function CustomSolutionsPage() {
           </div>
 
           {/* Column 4: Expertise and Ongoing Support */}
-          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg dark:bg-gray-900 dark:shadow-zinc-800 text-center">
+          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg  dark:bg-gray-dark dark:shadow-zinc-800 text-center">
             <h3 className="mb-4 text-2xl font-semibold text-gray-800 dark:text-white">
               Expertise and Support You Can Rely On
             </h3>

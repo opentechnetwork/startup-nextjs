@@ -3,7 +3,7 @@ import React from "react";
 
 const Services = () => {
   return (
-    <section className="bg-gray-50 py-16 dark:bg-gray-dark md:pb-[120px]">
+    <section className="bg-gray-90 py-16">
       <div className="container mx-auto">
         {/* Section Header */}
         <div className="mb-12 text-center ">
@@ -19,7 +19,7 @@ const Services = () => {
         {/* Services Grid */}
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 ">
           {/* Web Design and Development */}
-          <div className="rounded-sm bg-white p-6 shadow-md transition dark:bg-gray-900 dark:shadow-zinc-800 text-center">
+          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg dark:bg-gray-dark  dark:shadow-zinc-800 text-center">
             <h3 className="mb-4 text-2xl font-semibold text-gray-800 dark:text-white">
               Web Design and Development
             </h3>
@@ -33,7 +33,7 @@ const Services = () => {
           </div>
 
           {/* SEO */}
-          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg dark:bg-gray-900 dark:shadow-zinc-800 text-center">
+          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg dark:bg-gray-dark  dark:shadow-zinc-800 text-center">
             <h3 className="mb-4 text-2xl font-semibold text-gray-800 dark:text-white">
               Search Engine Optimization (SEO)
             </h3>
@@ -47,7 +47,7 @@ const Services = () => {
           </div>
 
           {/* E-commerce Solutions */}
-          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg dark:bg-gray-900 dark:shadow-zinc-800 text-center">
+          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg dark:bg-gray-dark  dark:shadow-zinc-800 text-center">
             <h3 className="mb-4 text-2xl font-semibold text-gray-800 dark:text-white">
               E-commerce Solutions
             </h3>
@@ -60,7 +60,7 @@ const Services = () => {
           </div>
 
           {/* Digital Marketing Services */}
-          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg dark:bg-gray-900 dark:shadow-zinc-800 text-center">
+          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg dark:bg-gray-dark  dark:shadow-zinc-800 text-center">
             <h3 className="mb-4 text-2xl font-semibold text-gray-800 dark:text-white">
               Digital Marketing Services
             </h3>

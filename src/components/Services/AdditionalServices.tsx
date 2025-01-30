@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const AdditionalServicesSection = () => {
   return (
-    <section className="bg-white py-16 dark:bg-gray-dark md:pb-[120px]">
+    <section className="bg-gray-90 py-16">
       <div className="container mx-auto">
         {/* Section Header */}
         <div className="mb-12 text-center">
@@ -20,7 +20,7 @@ const AdditionalServicesSection = () => {
         {/* Services Grid */}
         <div className="grid grid-cols-1 gap-5  md:grid-cols-2 lg:grid-cols-4">
           {/* CMS */}
-          <div className="rounded-sm bg-gray-50 p-6 shadow-md transition hover:shadow-lg dark:bg-gray-900 dark:shadow-zinc-800 text-center">
+          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg dark:bg-gray-dark  dark:shadow-zinc-800 text-center">
             <h3 className="mb-4 text-2xl font-semibold text-gray-800 dark:text-white">
               Content Management Systems (CMS)
             </h3>
@@ -34,7 +34,7 @@ const AdditionalServicesSection = () => {
           </div>
 
           {/* UX/UI Design */}
-          <div className="rounded-sm bg-gray-50 p-6 shadow-md transition hover:shadow-lg dark:bg-gray-900 dark:shadow-zinc-800 text-center">
+          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg dark:bg-gray-dark  dark:shadow-zinc-800 text-center">
             <h3 className="mb-4 text-2xl font-semibold text-gray-800 dark:text-white">
               UX/UI Design Services
             </h3>
@@ -48,7 +48,7 @@ const AdditionalServicesSection = () => {
           </div>
 
           {/* Website Maintenance */}
-          <div className="rounded-sm bg-gray-50 p-6 shadow-md transition hover:shadow-lg dark:bg-gray-900 dark:shadow-zinc-800 text-center">
+          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg dark:bg-gray-dark  dark:shadow-zinc-800 text-center">
             <h3 className="mb-4 text-2xl font-semibold text-gray-800 dark:text-white">
               Website Maintenance and Support
             </h3>
@@ -62,7 +62,7 @@ const AdditionalServicesSection = () => {
           </div>
 
           {/* Analytics and Reporting */}
-          <div className="rounded-sm bg-gray-50 p-6 shadow-md transition hover:shadow-lg dark:bg-gray-900 dark:shadow-zinc-800 text-center">
+          <div className="rounded-sm bg-white p-6 shadow-md transition hover:shadow-lg dark:bg-gray-dark  dark:shadow-zinc-800 text-center">
             <h3 className="mb-4 text-2xl font-semibold text-gray-800 dark:text-white">
               Analytics and Reporting
             </h3>
