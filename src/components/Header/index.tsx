@@ -57,7 +57,7 @@ const Header = () => {
                 } `}
               >
                 <Image
-                  src="/images/logo/otin-dark-branding.svg"
+                  src="/images/logo/otin.svg"
                   alt="logo"
                   width={140}
                   height={30}
