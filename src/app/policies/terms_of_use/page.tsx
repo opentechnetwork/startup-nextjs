@@ -1,12 +1,14 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import TermsOfUse from "@/components/Policies/TermsOfUse"; // Replace with the correct component import
 
-import { Metadata } from "next";
+import Metadata from "next";
 
 export const metadata: Metadata = {
   title: "Terms of Use | Open Tech Innovations",
-  description: "Review the Terms of Use for accessing Open Tech Innovations' website. Know your responsibilities and rights.",
-  keywords: "terms of use, user responsibilities, website access, Open Tech Innovations, user agreement",
+  description:
+    "Review the Terms of Use for accessing Open Tech Innovations' website. Know your responsibilities and rights.",
+  keywords:
+    "terms of use, user responsibilities, website access, Open Tech Innovations, user agreement",
 };
 
 const TermsOfUseTerms_Of_UsePage = () => {

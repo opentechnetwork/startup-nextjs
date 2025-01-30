@@ -1,7 +1,7 @@
 import React from "react";
 import Breadcrumb from "@components/Common/Breadcrumb";
 
-import { Metadata } from "next";
+import Metadata from "next";
 
 export const metadata: Metadata = {
   title: "Request a Quote | Open Tech Innovations",

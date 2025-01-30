@@ -9,6 +9,7 @@ import GoogleAnalytics from "@components/anaytics/GoogleAnalytics";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import ServiceWorker from "@components/ServiceWorker";
+import  Testimonials from "@components/Testimonials";
 import "../styles/index.css";
 import "../styles/googlefonts.css";
 
@@ -33,6 +34,7 @@ export default function RootLayout({
           <Header />
           <ServiceWorker /> {/* Register Service Worker */}
           {children}
+          <Testimonials />
           <SpeedInsights />
           <Analytics />
           <Footer />
@@ -46,3 +48,4 @@ export default function RootLayout({
 
 import { Providers } from "./providers";
 import React from "react";
+

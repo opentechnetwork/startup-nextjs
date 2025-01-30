@@ -1,12 +1,14 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import PrivacyPolicy from "@/components/Policies/PrivacyPolicy"; // Replace with the correct component import
 
-import { Metadata } from "next";
+import Metadata from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Open Tech Innovation",
-  description: "Learn how Open Tech Innovations collects, uses, and protects your personal information. Read our Privacy Policy for detailed information.",
-  keywords: "privacy policy, data protection, personal information, Open Tech Innovations, GDPR compliance",
+  description:
+    "Learn how Open Tech Innovations collects, uses, and protects your personal information. Read our Privacy Policy for detailed information.",
+  keywords:
+    "privacy policy, data protection, personal information, Open Tech Innovations, GDPR compliance",
 };
 
 const PoliciesPrivacyPage = () => {

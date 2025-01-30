@@ -5,29 +5,29 @@ import SingleTestimonial from "./SingleTestimonial";
 const testimonialData: Testimonial[] = [
   {
     id: 4,
-    name: "Musharof Chy",
-    designation: "Founder @TailGrids",
+    name: "Patrice S.",
+    designation: "California",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-01.png",
+      "Open Tech Innovations has been instrumental in helping our business grow through their exceptional web design services. Highly recommended!",
+    image: "/images/testimonials/google.svg",
     star: 5,
   },
   {
     id: 5,
-    name: "Devid Weilium",
-    designation: "Founder @UIdeck",
+    name: "Nathan R.",
+    designation: "Founder Go Virtual Pro (Houston, TX)",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-02.png",
+      "The hosting and maintenance services from Open Tech Innovations are second to none! Our website runs smoothly, and any issues are addressed promptly.",
+    image: "/images/testimonials/google.svg",
     star: 5,
   },
   {
     id: 6,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
+    name: "Alfred R.",
+    designation: "Founder LifeTax Financial (Dallas, TX)",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-03.png",
+      "David is the best! Always quick responses and has overhauled my business website more than once. Very knowledgeable of his craft. Highly recommend!!",
+    image: "/images/testimonials/google.svg",
     star: 5,
   },
 ];
