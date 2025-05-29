@@ -65,7 +65,7 @@ const Video = () => {
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/watch?v=DDftVfk0KAc"
+            src="https://www.youtube.com/embed/DDftVfk0KAc?si=Uernbql4uTsJY5Zk"
             title="YouTube video player - Introduction to React"
             style={{ border: "none" }} // Replaces the deprecated frameBorder attribute
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
