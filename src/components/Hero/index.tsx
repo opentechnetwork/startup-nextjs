@@ -16,15 +16,13 @@ const Hero = () => {
                   Open Tech Innovations
                 </h1>
                 <h2 className="mb-5">
-                  Driving Success with Cutting-Edge Web Design, AI-Powered SEO,
-                  and Comprehensive Digital Solutions.
+                  Scalable Websites. Smart Campaigns. Real Growth.
                 </h2>
                 <p className="contentful-paint mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  Open Tech Innovations (OTIN) is committed to delivering
-                  technology-driven solutions that help businesses thrive
-                  online. Our Responsive Website Designs ensure your site looks
-                  stunning and functions seamlessly on any device, tailored to
-                  meet your unique needs.
+                  From fast-launch WordPress builds to enterprise-grade React solutions, we deliver agency-level results with AI-powered precision.
+                </p>
+                <p className="contentful-paint mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
+                  Web design, SEO, social media, and analytics—built for startups, scaled for success.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
@@ -37,7 +35,7 @@ const Hero = () => {
                     href="/pricing"
                     className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >
-                    Pricing
+                    Explore Plans
                   </Link>
                 </div>
               </div>
