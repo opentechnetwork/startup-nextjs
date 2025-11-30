@@ -58,67 +58,83 @@ const Pricing = () => {
         </div>
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+          {/* Starter Tier */}
           <PricingBox
             packageName="Starter"
-            price={isMonthly ? "99" : "1,010"}
+            price={isMonthly ? "49" : "490"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Steady growth with advanced SEO and responsive design."
+            subtitle="Fast-launch websites with essential SEO and Shopify setup."
           >
-            <OfferList text="Advanced SEO strategies" status="active" />
-            <OfferList text="Responsive website design (up to 10 pages)" status="active" />
-            <OfferList text="Basic PPC management" status="active" />
-            <OfferList text="Contact forms setup" status="active" />
-            <OfferList text="Monthly analytics reports" status="active" />
-            <OfferList text="E-commerce setup (up to 20 products)" status="active" />
-            <OfferList text="Option to opt-in for Google Ads setup (2 campaign ads) with management, updates, and modifications upon request." status="active" />
-            <OfferList text="Setup Fee: $150" status="active" />
-            <OfferList text="Yearly Option: $1,010 (15% discount)" status="active" />
+            <OfferList text="Responsive website design (WordPress/ZipWP or React, up to 10 pages)" status="active" />
+            <OfferList text="Basic SEO setup (Google Search Console integration)" status="active" />
+            <OfferList text="Sentra AI content support (basic helper)" status="active" />
+            <OfferList text="Social media profile setup (Facebook, Instagram, Google Business)" status="active" />
+            <OfferList text="Ticketing system (Freshdesk/Zoho)" status="active" />
+            <OfferList text="Client portal access (SuiteDash/Clinked)" status="active" />
+            <OfferList text="Monthly maintenance updates" status="active" />
+            <OfferList text="Shopify store setup (up to 20 products)" status="active" />
+            <OfferList text="Shopify theme installation + payment gateway setup" status="active" />
+            <OfferList text="Mouseflow heatmap tracking" status="inactive" />
+            <OfferList text="Ad campaign management (Meta/Google Ads)" status="inactive" />
+            <OfferList text="Advanced Shopify integrations (CRM, ERP)" status="inactive" />
+            <OfferList text="Setup Fee: $49" status="active" />
+            <OfferList text="Yearly Option: $490 (save 15%)" status="active" />
             <OfferList text="Quarterly Payment Plan: Available upon request" status="active" />
-
-
-
           </PricingBox>
+
+          {/* Growth Tier */}
           <PricingBox
-            packageName="Professional"
-            price={isMonthly ? "299" : "2,153"}
+            packageName="Growth"
+            price={isMonthly ? "149" : "1450"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Elevate your strategy with comprehensive SEO and social media."
+            subtitle="AI-powered content, advanced SEO, Shopify optimization, and campaign management."
           >
-            <OfferList text="Comprehensive SEO" status="active" />
-            <OfferList text="Social media management" status="active" />
-            <OfferList text="Custom web design (up to 15 pages)" status="active" />
-            <OfferList text="SEM management and setup" status="active" />
-            <OfferList text="Monthly customer and analytics reports" status="active" />
-            <OfferList text="E-commerce setup (up to 75 products)" status="active" />
-            <OfferList text="Google Ads setup (3 campaign ads) with management, updates, and modifications upon request" status="active" />
-            <OfferList text="Setup Fee: $200" status="active" />
-            <OfferList text="Yearly Option: $2,153 (40% discount)" status="active" />
+            <OfferList text="Responsive website design (React/Next.js or WordPress, up to 20 pages)" status="active" />
+            <OfferList text="Advanced SEO audits + Google Search Console integration" status="active" />
+            <OfferList text="Sentra AI content writer (blogs, landing pages, ads)" status="active" />
+            <OfferList text="Social media profile management + content refresh" status="active" />
+            <OfferList text="Ad campaign management (Meta + Google Ads)" status="active" />
+            <OfferList text="Mouseflow analytics (heatmaps, funnels, session recordings)" status="active" />
+            <OfferList text="Monthly analytics reports (Google Analytics, Merchant Center)" status="active" />
+            <OfferList text="Priority support via ticketing system" status="active" />
+            <OfferList text="Client portal with project dashboard" status="active" />
+            <OfferList text="E-commerce setup (up to 50 products)" status="active" />
+            <OfferList text="Shopify store build (up to 50 products)" status="active" />
+            <OfferList text="Sentra AI product descriptions + ad copy" status="active" />
+            <OfferList text="Shopify catalog integration with Meta/Google Ads" status="active" />
+            <OfferList text="Setup Fee: $199" status="active" />
+            <OfferList text="Yearly Option: $1,450 (save 15%)" status="active" />
             <OfferList text="Quarterly Payment Plan: Available upon request" status="active" />
-
-
-
-            {/* <OfferList text="Free Lifetime Updates" status="inactive" /> the status either displays a checkmark of X related to what is offered for the package.*/}
           </PricingBox>
+
+          {/* Agency Pro Tier */}
           <PricingBox
-            packageName="Premium"
-            price={isMonthly ? "499" : "2,994"}
+            packageName="Agency Pro"
+            price={isMonthly ? "499" : "4999"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Maximize impact with full-service SEO, PPC, and development"
+            subtitle="Enterprise-grade builds, Shopify enterprise solutions, white-label branding, and strategic consulting."
           >
-            <OfferList text="Full-service SEO and PPC" status="active" />
-            <OfferList text="Enhanced social media management" status="active" />
-            <OfferList text="Custom web development (up to 20 pages)" status="active" />
-            <OfferList text="Monthly backups and maintenance" status="active" />
-            <OfferList text="Graphic design and stock images" status="active" />
-            <OfferList text="E-commerce setup (up to 200 products)" status="active" />
-            <OfferList text="Google Ads setup (up to 5 campaign ads) with management, updates, and modifications upon request" status="active" />
-            <OfferList text="Setup Fee: $300" status="active" />
-            <OfferList text="Yearly Option: $2,994 (50% discount)" status="active" />
+            <OfferList text="Enterprise website design (React/Next.js, unlimited pages)" status="active" />
+            <OfferList text="Full SEO strategy + accessibility audits" status="active" />
+            <OfferList text="Sentra AI advanced automation (multi-channel campaigns)" status="active" />
+            <OfferList text="Social media ad campaigns (Meta, Google Ads, LinkedIn)" status="active" />
+            <OfferList text="Mouseflow full suite (heatmaps, funnels, session recordings)" status="active" />
+            <OfferList text="Google Merchant Center + e-commerce integration" status="active" />
+            <OfferList text="Custom API integrations + CRM automation" status="active" />
+            <OfferList text="White-label branding + client portal customization" status="active" />
+            <OfferList text="Unlimited collaborators" status="active" />
+            <OfferList text="Quarterly strategy sessions" status="active" />
+            <OfferList text="Dedicated account manager" status="active" />
+            <OfferList text="Shopify enterprise build (unlimited products + custom theme development)" status="active" />
+            <OfferList text="Advanced Shopify integrations (CRM, ERP, inventory systems)" status="active" />
+            <OfferList text="Sentra AI automation for Shopify campaigns (email, ads, social)" status="active" />
+            <OfferList text="Setup Fee: $399" status="active" />
+            <OfferList text="Yearly Option: $4,999 (save 15%)" status="active" />
             <OfferList text="Quarterly Payment Plan: Available upon request" status="active" />
-
-
           </PricingBox>
         </div>
+
+
       </div>
 
       <div className="absolute bottom-0 left-0 z-[-1]">
